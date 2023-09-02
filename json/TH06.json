@@ -1,0 +1,38 @@
+{
+    "title": "Embodiment of Scarlet Devil",
+    "title_short": "EoSD",
+    "characters": [
+        {
+            "name": "Reimu A",
+            "easy": "Not Cleared",
+            "normal": "Not Cleared",
+            "hard": "Not Cleared",
+            "lunatic": "No Bomb",
+            "extra": "Not Cleared"
+        },
+        {
+            "name": "Reimu B",
+            "easy": "No Clear",
+            "normal": "Not Cleared",
+            "hard": "Not Cleared",
+            "lunatic": "Not Cleared",
+            "extra":"Not Cleared"
+        },
+        {
+            "name": "Marisa A",
+            "easy": "No Clear",
+            "normal": "Not Cleared",
+            "hard": "Not Cleared",
+            "lunatic": "Not Cleared",
+            "extra": "Not Cleared"
+        },
+        {
+            "name": "Marisa B",
+            "easy": "No Clear",
+            "normal": "1cc",
+            "hard": "1cc",
+            "lunatic": "?",
+            "extra": "Not Cleared"
+        } 
+    ]
+}
