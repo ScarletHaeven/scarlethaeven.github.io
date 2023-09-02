@@ -4,35 +4,76 @@
     "characters": [
         {
             "name": "Reimu A",
-            "easy": "Not Cleared",
-            "normal": "Not Cleared",
-            "hard": "Not Cleared",
-            "lunatic": "No Bomb",
-            "extra": "Not Cleared"
+            "easy": {
+                "status": "1cc"
+            },
+            "normal": {
+                "status": "1cc"
+            },
+            "hard": {
+                "status": "1cc"
+            },
+            "lunatic": {
+                "status": "No Bomb"
+            },
+            "extra":  {
+                "status": "1cc"
+            }
         },
         {
             "name": "Reimu B",
-            "easy": "No Clear",
-            "normal": "Not Cleared",
-            "hard": "Not Cleared",
-            "lunatic": "Not Cleared",
-            "extra":"Not Cleared"
+            "easy": {
+                "status": "1cc"
+            },
+            "normal": {
+                "status": "1cc"
+            },
+            "hard": {
+                "status": "1cc"
+            },
+            "lunatic": {
+                "status": "1cc"
+            },
+            "extra":  {
+                "status": "1cc"
+            }
         },
         {
             "name": "Marisa A",
-            "easy": "No Clear",
-            "normal": "Not Cleared",
-            "hard": "Not Cleared",
-            "lunatic": "Not Cleared",
-            "extra": "Not Cleared"
+            "easy": {
+                "status": "1cc"
+            },
+            "normal": {
+                "status": "1cc"
+            },
+            "hard": {
+                "status": "1cc"
+            },
+            "lunatic": {
+                "status": "1cc"
+            },
+            "extra":  {
+                "status": "1cc"
+            }
         },
         {
             "name": "Marisa B",
-            "easy": "No Clear",
-            "normal": "1cc",
-            "hard": "1cc",
-            "lunatic": "?",
-            "extra": "Not Cleared"
+            "easy": {
+                "status": "1cc"
+            },
+            "normal": {
+                "status": "1cc"
+            },
+            "hard": {
+                "status": "1cc"
+            },
+            "lunatic": {
+                "status": "1cc",
+                "link": "https://www.youtube.com/channel/UCcD30b5b3wGlxQQHwvnXwEw"
+            },
+            "extra":{
+                "status": "Not Cleared"
+            }
         } 
     ]
 }
