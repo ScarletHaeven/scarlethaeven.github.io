@@ -2,16 +2,24 @@ const greetings = ["Hello!", "Hi!", "Hey there!", "Yo!", "Hey!", "Skill Issue"]
 
 const app = angular.module('TouhouApp', []);
 
-app.directive('closeModal', function() {
+app.directive('closeModal', function($document) {
     return {
         restrict: 'A',
         link: function(scope, element) {
-            element.on('click', function(event) {
-                if (scope.isModalVisible == false) {
+            function closeModal(event) {
+                if (scope.isModalVisible !== true) {
                     return
                 }
                 
-                let modalContent = document.querySelector('.game-modal-content');
+                if (event.key === 'Escape') {
+                    scope.$apply(function () {
+                        scope.isModalVisible = false;
+                    });
+
+                    return
+                } 
+
+                let modalContent = element[0].firstElementChild
                 let isClickInside = modalContent.contains(event.target);
 
                 if (!isClickInside) {
@@ -19,8 +27,10 @@ app.directive('closeModal', function() {
                         scope.isModalVisible = false;
                     });
                 }
-                
-            });
+            }
+
+            $document.on('click', closeModal)
+            $document.on('keydown', closeModal);;
         }
     };
 });
