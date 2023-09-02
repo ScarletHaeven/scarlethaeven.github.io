@@ -34,7 +34,6 @@ app.directive('closeModal', function ($document) {
     };
 });
 
-
 app.controller('TouhouController', function ($scope, $http) {
     $scope.greeting = greetings[Math.floor(Math.random() * greetings.length)];
     $scope.isModalVisible = false;
