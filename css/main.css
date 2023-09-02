@@ -44,10 +44,9 @@ th, td {
     margin-bottom: 15px;
 }
 
-.grid-button {
+.grid-button {    
+    background: rgba(0, 0, 0, 0.7);
     background-blend-mode: darken;
-    background: rgba(0, 0, 0, 0.75) url("../images/game-images/Th08cover.jpg");
-    background-position: 48% 0%;
     border: none;
     cursor: pointer;
 }
@@ -92,9 +91,6 @@ th, td {
     position: fixed;
     max-width: none;
     padding-bottom: 0;
-    background: rgba(0, 0, 0, 0.9) url("../images/game-images/Th06cover.jpg");
-    background-blend-mode: darken;
-    background-position: 50% 25%;
     text-align: center;
 }
 

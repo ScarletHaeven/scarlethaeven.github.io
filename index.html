@@ -27,10 +27,10 @@
         <div ng-include="'parts/game-image-grid.html'"></div>
         
         <dialog class="game-modal" ng-attr-open="{{isModalVisible ? 'open' : undefined}}" close-modal>
-            <article class="game-modal-content">
+            <article class="game-modal-content" ng-style="modalBackgroundStyling">
                 <header class="game-modal-title">
                     <a class="close" ng-click="isModalVisible = false"></a>
-                    <h1>{{ gameName }} Achievements</h1>
+                    <h1>{{ gameName }} Clears</h1>
                 </header>
 
                 <div ng-include="'parts/achievement-table-structure.html'"></div>
