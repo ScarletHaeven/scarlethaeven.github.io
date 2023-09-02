@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +11,12 @@
     <script src="js/main.js"></script>
     <title>Ramzy's Touhou Portfolio</title>
 </head>
+
 <body>
     <main class="container" ng-app="TouhouApp" ng-controller="TouhouController">
+        
         <header>
-            <a href="https://www.youtube.com/channel/UCcD30b5b3wGlxQQHwvnXwEw"><img class="scarlet-logo" src="images/ScarletPFP.png"></img></a>
+            <a href="https://www.youtube.com/channel/UCcD30b5b3wGlxQQHwvnXwEw"><img class="scarlet-logo"src="images/ScarletPFP.png"></img></a>
             <h1>{{ greeting }}</h1>
         </header>
 
@@ -24,8 +27,8 @@
             <button class="grid-button">Contact?!</button>
         </div>
 
-        <div ng-include="'parts/game-image-grid.html'"></div>
-        
+        <div ng-include="'parts/touhou-completion-grid.html'"></div>
+
         <dialog class="game-modal" ng-attr-open="{{isModalVisible ? 'open' : undefined}}" close-modal>
             <article class="game-modal-content" ng-style="modalBackgroundStyling">
                 <header class="game-modal-title">
@@ -33,11 +36,12 @@
                     <h1>{{ gameName }} Clears</h1>
                 </header>
 
-                <div ng-include="'parts/achievement-table-structure.html'"></div>
+                <div ng-include="'parts/touhou-completion-table.html'"></div>
 
             </article>
         </dialog>
-       
+
     </main>
 </body>
+
 </html>
