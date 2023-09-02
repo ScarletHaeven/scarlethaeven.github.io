@@ -1,4 +1,4 @@
-const greetings = ["Hello!", "Hi!", "Hey there!", "Yo!", "Hey!", "Skill Issue"]
+const greetings = ["Hello!", "Hi!", "Hey there!", "Hey!", "Welcome!", "Yo!"]
 
 const app = angular.module('TouhouApp', []);
 
@@ -11,25 +11,16 @@ app.directive('closeModal', function ($document) {
                     return
                 }
 
-                if (event.key != "Escape") {
-                    return
-                }
-
-                if (event.key == "Escape") {
-                    scope.$apply(function () {
-                        scope.isModalVisible = false;
-                    });
-
+                if (event instanceof KeyboardEvent && event.key == "Escape") {
+                    scope.$apply(() => scope.isModalVisible = false);
                     return
                 }
 
                 let modalContent = element[0].firstElementChild
                 let isClickInside = modalContent.contains(event.target);
 
-                if (!isClickInside) {
-                    scope.$apply(function () {
-                        scope.isModalVisible = false;
-                    });
+                if (event instanceof PointerEvent && !isClickInside) {
+                    scope.$apply(() => scope.isModalVisible = false);
                 }
             }
 
@@ -62,7 +53,7 @@ app.controller('TouhouController', function ($scope, $http) {
                 }
             })
             .catch(function () {
-                alert("Kankerzooi!")
+                alert("Game not added yet!")
             })
     }
 });
