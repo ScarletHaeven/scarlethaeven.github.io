@@ -1,0 +1,58 @@
+{
+    "characters": [
+        {
+            "name": "Reimu A",
+            "easy": "1cc",
+            "normal": "1cc",
+            "hard": "1cc",
+            "lunatic": "1cc",
+            "extra": "1cc",
+            "phantasm": "1cc"
+        },
+        {
+            "name": "Reimu B",
+            "easy": "1cc",
+            "normal": "1cc",
+            "hard": "1cc",
+            "lunatic": "1cc",
+            "extra": "1cc",
+            "phantasm": "1cc"
+        },
+        {
+            "name": "Marisa A",
+            "easy": "1cc",
+            "normal": "1cc",
+            "hard": "1cc",
+            "lunatic": "1cc",
+            "extra": "1cc",
+            "phantasm": "1cc"
+        },
+        {
+            "name": "Marisa B",
+            "easy": "1cc",
+            "normal": "1cc",
+            "hard": "1cc",
+            "lunatic": "1cc",
+            "extra": "1cc",
+            "phantasm": "1cc"
+        },
+        {
+            "name": "Sakuya A",
+            "easy": "1cc",
+            "normal": "1cc",
+            "hard": "1cc",
+            "lunatic": "1cc",
+            "extra": "1cc",
+            "phantasm": "1cc"
+        },
+        {
+            "name": "Sakuya B",
+            "easy": "1cc",
+            "normal": "1cc",
+            "hard": "1cc",
+            "lunatic": "1cc",
+            "extra": "1cc",
+            "phantasm": "1cc"
+        }
+    ]
+}

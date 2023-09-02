@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/pico.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/angular.min.js"></script>
+    <script src="js/main.js"></script>
+    <title>Ramzy's Touhou Portfolio</title>
+</head>
+<body>
+    <main class="container" ng-app="TouhouApp" ng-controller="TouhouController">
+        <header>
+            <a href="https://www.youtube.com/channel/UCcD30b5b3wGlxQQHwvnXwEw"><img class="scarlet-logo" src="images/ScarletPFP.png"></img></a>
+            <h1>{{ greeting }}</h1>
+        </header>
+
+        <div class="grid button-grid">
+            <button class="grid-button">Current Goals</button>
+            <button class="grid-button">My Touhou History</button>
+            <button class="grid-button">Where to find me</button>
+            <button class="grid-button">Contact?!</button>
+        </div>
+
+        <div ng-include="'parts/game-image-grid.html'"></div>
+        
+        <dialog class="game-modal" ng-attr-open="{{isModalVisible ? 'open' : undefined}}" close-modal>
+            <article class="game-modal-content">
+                <header class="game-modal-title">
+                    <a class="close" ng-click="isModalVisible = false"></a>
+                    <h1>{{ gameName }} Achievements</h1>
+                </header>
+
+                <div ng-include="'parts/achievement-table-structure.html'"></div>
+
+            </article>
+        </dialog>
+       
+    </main>
+</body>
+</html>

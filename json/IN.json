@@ -1,0 +1,36 @@
+{
+    "characters": [
+        {
+            "name": "Border Team",
+            "easy": "1cc",
+            "normal": "1cc",
+            "hard": "1cc",
+            "lunatic": "1cc",
+            "extra": "1cc"
+        },
+        {
+            "name": "Magic Team",
+            "easy": "1cc",
+            "normal": "1cc",
+            "hard": "1cc",
+            "lunatic": "1cc",
+            "extra": "1cc"
+        },
+        {
+            "name": "Scarlet Team",
+            "easy": "1cc",
+            "normal": "1cc",
+            "hard": "1cc",
+            "lunatic": "LNN",
+            "extra": "1cc"
+        },
+        {
+            "name": "Netherworld Team",
+            "easy": "1cc",
+            "normal": "1cc",
+            "hard": "1cc",
+            "lunatic": "1cc",
+            "extra": "1cc"
+        }
+    ]
+}

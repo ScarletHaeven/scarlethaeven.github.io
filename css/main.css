@@ -1,0 +1,110 @@
+body {
+    min-height: 100vh; /* Remove later! */;
+    background: rgba(0, 0, 0, 0.75) url("../images/PrismriverWallpaper.png");
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    margin: 0;
+}
+
+header {
+    margin-bottom: 15px;
+    border-bottom: none !important;
+} 
+
+table {
+    height: fit-content;
+}
+
+th, td {
+    border: none;
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.scarlet-logo {
+    width: 100px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    transition: 0.25s;
+}
+
+.scarlet-logo:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.button-grid {
+    margin-bottom: 15px;
+}
+
+.grid-button {
+    background-blend-mode: darken;
+    background: rgba(0, 0, 0, 0.75) url("../images/game-images/Th08cover.jpg");
+    background-position: 48% 0%;
+    border: none;
+    cursor: pointer;
+}
+
+.grid-button:active, .grid-button:focus {
+    box-shadow: none;
+}
+
+.game-image-grid {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+}
+
+.grid-image {
+    width: 250px;
+    background-color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.grid-image:hover {
+    transform: scale(1.1);
+    transition: 0.25s;
+}
+
+.grid-column-two {
+    grid-column: 2;
+}
+
+.grid-column-three {
+    grid-column: 3;
+}
+
+.game-modal-title {
+    margin-bottom: 0;
+    background: none;
+}
+
+.game-modal-content {
+    position: fixed;
+    max-width: none;
+    padding-bottom: 0;
+    background: rgba(0, 0, 0, 0.9) url("../images/game-images/Th06cover.jpg");
+    background-blend-mode: darken;
+    background-position: 50% 25%;
+    text-align: center;
+}
+
+.game-modal-table {
+    margin-bottom: 0;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
