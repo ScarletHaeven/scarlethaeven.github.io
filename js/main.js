@@ -30,11 +30,7 @@ app.directive('closeModal', function($document) {
             }
 
             $document.on('click', closeModal)
-            $document.on('keydown', closeModal);
-
-            // scope.$on('$destroy', function () {
-            //     $document.off('keydown', closeModal);
-            // });
+            $document.on('keydown', closeModal);;
         }
     };
 });
