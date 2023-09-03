@@ -20,6 +20,10 @@
             "lunatic": {
                 "status": "Not Cleared",
                 "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
             }
         },
         {
@@ -37,6 +41,10 @@
                 "link": ""
             },
             "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
                 "status": "Not Cleared",
                 "link": ""
             }
@@ -58,6 +66,10 @@
             "lunatic": {
                 "status": "Not Cleared",
                 "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
             }
         },
         {
@@ -75,6 +87,10 @@
                 "link": ""
             },
             "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
                 "status": "Not Cleared",
                 "link": ""
             }
@@ -96,6 +112,10 @@
             "lunatic": {
                 "status": "Not Cleared",
                 "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
             }
         },
         {
@@ -113,6 +133,10 @@
                 "link": ""
             },
             "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
                 "status": "Not Cleared",
                 "link": ""
             }
@@ -134,6 +158,10 @@
             "lunatic": {
                 "status": "Not Cleared",
                 "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
             }
         },
         {
@@ -151,6 +179,10 @@
                 "link": ""
             },
             "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
                 "status": "Not Cleared",
                 "link": ""
             }
@@ -172,6 +204,10 @@
             "lunatic": {
                 "status": "Not Cleared",
                 "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
             }
         },
         {
@@ -189,6 +225,10 @@
                 "link": ""
             },
             "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
                 "status": "Not Cleared",
                 "link": ""
             }
@@ -210,6 +250,10 @@
             "lunatic": {
                 "status": "Not Cleared",
                 "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
             }
         },
         {
@@ -227,6 +271,10 @@
                 "link": ""
             },
             "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
                 "status": "Not Cleared",
                 "link": ""
             }
@@ -248,6 +296,10 @@
             "lunatic": {
                 "status": "Not Cleared",
                 "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
             }
         },
         {
@@ -265,6 +317,10 @@
                 "link": ""
             },
             "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
                 "status": "Not Cleared",
                 "link": ""
             }
@@ -286,6 +342,10 @@
             "lunatic": {
                 "status": "Not Cleared",
                 "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
             }
         },
         {
@@ -305,9 +365,13 @@
             "lunatic": {
                 "status": "Not Cleared",
                 "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
             }
         }
     ],
-    "hasExtra": false,
+    "hasExtra": true,
     "hasPhantasm": false
 }
