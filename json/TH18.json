@@ -1,10 +1,10 @@
 {
-    "title": "Embodiment of Scarlet Devil",
-    "title_short": "EoSD",
-    "number": "TH06",
+    "title": "Unconnected Marketeers",
+    "title_short": "UM",
+    "number": "TH18",
     "characters": [
         {
-            "name": "Reimu A",
+            "name": "Reimu",
             "easy": {
                 "status": "Not Cleared",
                 "link": ""
@@ -27,7 +27,7 @@
             }
         },
         {
-            "name": "Reimu B",
+            "name": "Marisa",
             "easy": {
                 "status": "Not Cleared",
                 "link": ""
@@ -50,7 +50,7 @@
             }
         },
         {
-            "name": "Marisa A",
+            "name": "Sakuya",
             "easy": {
                 "status": "Not Cleared",
                 "link": ""
@@ -73,7 +73,7 @@
             }
         },
         {
-            "name": "Marisa B",
+            "name": "Sanae",
             "easy": {
                 "status": "Not Cleared",
                 "link": ""

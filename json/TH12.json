@@ -1,7 +1,7 @@
 {
-    "title": "Embodiment of Scarlet Devil",
-    "title_short": "EoSD",
-    "number": "TH06",
+    "title": "Undefined Fantastic Object",
+    "title_short": "UFO",
+    "number": "TH12",
     "characters": [
         {
             "name": "Reimu A",
@@ -74,6 +74,52 @@
         },
         {
             "name": "Marisa B",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "Sanae A",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "Sanae B",
             "easy": {
                 "status": "Not Cleared",
                 "link": ""

@@ -1,0 +1,285 @@
+{
+    "title": "Imperishable Night",
+    "title_short": "IN",
+    "number": "TH08",
+    "characters": [
+        {
+            "name": "Border Team",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "Magic Team",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "Scarlet Team",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "Netherworld Team",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "Reimu",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "Yukari",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "Marisa",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "Alice",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "Sakuya",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "Remilia",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "Youmu",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "Yuyuko",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        }
+    ],
+    "hasExtra": true,
+    "hasPhantasm": false
+}

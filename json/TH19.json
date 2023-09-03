@@ -1,0 +1,370 @@
+{
+    "title": "Unfinished Dream of All Living Ghost",
+    "title_short": "UDoALG",
+    "number": "TH19",
+    "characters": [
+        {
+            "name": "Reimu",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "Marisa",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "Sanae",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "Ran",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "Aunn",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "Nazrin",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "Seiran",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "Rin",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "Tsukasa",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "Mamizou",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "Yachie",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "Saki",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "Yuuma",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "Suika",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "Son Biten",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "Enoko",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "Chiyari",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "Hisami",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "Zanmu",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        }
+    ],
+    "hasExtra": false,
+    "hasPhantasm": false
+}

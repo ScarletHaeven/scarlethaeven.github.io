@@ -1,0 +1,377 @@
+{
+    "title": "Hidden Star in Four Seasons",
+    "title_short": "HSiFS",
+    "number": "TH16",
+    "characters": [
+        {
+            "name": "ReimuSp",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "ReimuSu",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "ReimuAu",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "ReimuWi",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "MarisaSp",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "MarisaSu",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "MarisaAu",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "MarisaWi",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "CirnoSp",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "CirnoSu",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "CirnoAu",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "CirnoWi",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "AyaSp",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "AyaSu",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "AyaAu",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "AyaWi",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        }
+    ],
+    "hasExtra": true,
+    "hasPhantasm": false
+}

@@ -1,0 +1,216 @@
+{
+    "title": "Wily Beast and Weakest Creature",
+    "title_short": "WBaWC",
+    "number": "TH17",
+    "characters": [
+        {
+            "name": "ReimuW",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "ReimuE",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "ReimuO",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "MarisaW",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "MarisaE",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "MarisaO",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "YoumuW",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "YoumuE",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "YoumuO",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        }
+    ],
+    "hasExtra": true,
+    "hasPhantasm": false
+}

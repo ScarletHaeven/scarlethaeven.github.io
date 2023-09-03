@@ -1,7 +1,7 @@
 {
-    "title": "Embodiment of Scarlet Devil",
-    "title_short": "EoSD",
-    "number": "TH06",
+    "title": "Perfect Cherry Blossom",
+    "title_short": "PCB",
+    "number": "TH07",
     "characters": [
         {
             "name": "Reimu A",
@@ -22,6 +22,10 @@
                 "link": ""
             },
             "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "phantasm": {
                 "status": "Not Cleared",
                 "link": ""
             }
@@ -47,6 +51,10 @@
             "extra": {
                 "status": "Not Cleared",
                 "link": ""
+            },
+            "phantasm": {
+                "status": "Not Cleared",
+                "link": ""
             }
         },
         {
@@ -68,6 +76,10 @@
                 "link": ""
             },
             "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "phantasm": {
                 "status": "Not Cleared",
                 "link": ""
             }
@@ -93,9 +105,67 @@
             "extra": {
                 "status": "Not Cleared",
                 "link": ""
+            },
+            "phantasm": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "Sakuya A",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "phantasm": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "Sakuya B",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "phantasm": {
+                "status": "Not Cleared",
+                "link": ""
             }
         }
     ],
     "hasExtra": true,
-    "hasPhantasm": false
+    "hasPhantasm": true
 }

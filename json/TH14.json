@@ -1,7 +1,7 @@
 {
-    "title": "Embodiment of Scarlet Devil",
-    "title_short": "EoSD",
-    "number": "TH06",
+    "title": "Double Dealing Character",
+    "title_short": "DDC",
+    "number": "TH14",
     "characters": [
         {
             "name": "Reimu A",
@@ -74,6 +74,52 @@
         },
         {
             "name": "Marisa B",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "Sakuya A",
+            "easy": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "normal": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "hard": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "Not Cleared",
+                "link": ""
+            }
+        },
+        {
+            "name": "Sakuya B",
             "easy": {
                 "status": "Not Cleared",
                 "link": ""
