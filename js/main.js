@@ -6,29 +6,25 @@ app.directive('closeModal', function ($document) {
     return {
         restrict: 'A',
         link: function (scope, element) {
-            function closeModal(event) {
+            function closeModalOnEvent(condition) {
                 if (scope.isModalVisible !== true) {
                     return
                 }
 
-                if (event instanceof KeyboardEvent && event.key == "Escape") {
-                    scope.$apply(() => scope.isModalVisible = false);
-                    return
-                }
-
-                let modalContent = element[0].firstElementChild
-                let isClickInside = modalContent.contains(event.target);
-
-                if (event instanceof PointerEvent && !isClickInside) {
-                    scope.$apply(() => scope.isModalVisible = false);
+                if (condition) {
+                    scope.$apply(() => scope.closeModal());
                 }
             }
 
-            $document.on('click', closeModal);
-            $document.on('keydown', closeModal);
+            $document.on('click', function (event) {
+                let modalContent = element[0].firstElementChild
+                let isClickInside = modalContent.contains(event.target);
 
-            scope.$on('$destroy', function () {
-                $document.off('keydown', closeModal);
+                closeModalOnEvent(!isClickInside)
+            });
+
+            $document.on('keydown', function (event) {
+                closeModalOnEvent(event.key == "Escape")
             });
         }
     };
@@ -37,13 +33,14 @@ app.directive('closeModal', function ($document) {
 app.controller('TouhouController', function ($scope, $http) {
     $scope.greeting = greetings[Math.floor(Math.random() * greetings.length)];
     $scope.isModalVisible = false;
-    $scope.gameNumbers = []
+    $scope.activePage = "completion-grid"
 
     $scope.displayModal = function (gameName) {
+
         $http.get(`json/${gameName}.json`)
             .then(function (json) {
-                $scope.characters = json.data["characters"];
                 $scope.isModalVisible = true;
+                $scope.characters = json.data["characters"];
                 $scope.gameName = json.data["title_short"];
                 $scope.modalBackgroundStyling = {
                     "background": `rgba(0, 0, 0, 0.9) url('../images/game-images/${gameName}.jpg')`,
@@ -54,5 +51,9 @@ app.controller('TouhouController', function ($scope, $http) {
             .catch(function () {
                 alert("Game not added yet!")
             })
+    }
+
+    $scope.closeModal = function () {
+        $scope.isModalVisible = false;
     }
 });

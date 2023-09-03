@@ -1,0 +1,37 @@
+<dialog class="game-modal" ng-attr-open="{{isModalVisible ? 'open' : undefined}}" close-modal>
+    <article class="game-modal-content" ng-style="modalBackgroundStyling">
+
+        <header class="game-modal-title">
+            <a class="close" ng-click="closeModal()"></a>
+            <h1>{{ gameName }} Clears</h1>
+        </header>
+
+        <figure class="game-modal-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Shottype</th>
+                        <th>Easy</th>
+                        <th>Normal</th>
+                        <th>Hard</th>
+                        <th>Lunatic</th>
+                        <th ng-if="gameName != 'UDoALG'">Extra</th>
+                        <th ng-if="gameName == 'PCB'">Phantasm</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="character in characters">
+                        <td>{{ character.name }}</td>
+                        <td>{{ character.easy.status }}<a ng-if="character.easy.link" ng-href="{{ character.easy.link }}" target="_blank"> (Link)</a></td>
+                        <td>{{ character.normal.status }}<a ng-if="character.normal.link" ng-href="{{ character.normal.link }}" target="_blank"> (Link)</a></td>
+                        <td>{{ character.hard.status }}<a ng-if="character.hard.link" ng-href="{{ character.hard.link }}" target="_blank"> (Link)</a></td>
+                        <td>{{ character.lunatic.status }}<a ng-if="character.lunatic.link" ng-href="{{ character.lunatic.link }}" target="_blank"> (Link)</a></td>
+                        <td ng-if="gameName != 'UDoALG'">{{ character.extra.status }}<a ng-if="character.extra.link" ng-href="{{ character.extra.link }}" target="_blank"> (Link)</a></td>
+                        <td ng-if="gameName == 'PCB'">{{ character.phantasm.status }}<a ng-if="character.phantasm.link" ng-href="{{ character.phantasm.link }}" target="_blank"> (Link)</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </figure>
+
+    </article>
+</dialog>

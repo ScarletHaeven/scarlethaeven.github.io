@@ -14,33 +14,23 @@
 
 <body>
     <main class="container" ng-app="TouhouApp" ng-controller="TouhouController">
-        
+
         <header>
             <a href="https://www.youtube.com/channel/UCcD30b5b3wGlxQQHwvnXwEw"><img class="scarlet-logo"src="images/ScarletPFP.png"></img></a>
             <h1>{{ greeting }}</h1>
         </header>
 
         <div class="grid button-grid">
+            <button ng-if="activePage != 'completion-grid'" ng-click="activePage = 'completion-grid'" class="grid-button">Completion Grid</button>
             <button class="grid-button">Current Goals</button>
             <button class="grid-button">My Touhou History</button>
             <button class="grid-button">Where to find me</button>
             <button class="grid-button">Contact?!</button>
         </div>
-
-        <div ng-include="'parts/touhou-completion-grid.html'"></div>
-
-        <dialog class="game-modal" ng-attr-open="{{isModalVisible ? 'open' : undefined}}" close-modal>
-            <article class="game-modal-content" ng-style="modalBackgroundStyling">
-                <header class="game-modal-title">
-                    <a class="close" ng-click="isModalVisible = false"></a>
-                    <h1>{{ gameName }} Clears</h1>
-                </header>
-
-                <div ng-include="'parts/touhou-completion-table.html'"></div>
-
-            </article>
-        </dialog>
-
+    
+        <div ng-if="activePage == 'completion-grid'" ng-include="'parts/completion-grid.html'"></div>
+        <div ng-if="activePage == 'completion-grid'" ng-include="'parts/completion-modal.html'"></div>
+        
     </main>
 </body>
 
