@@ -86,19 +86,30 @@ a {
     grid-column: 3;
 }
 
-.game-modal-title {
+.modal {
+    position: fixed;
+    overflow: scroll;
+}
+
+.modal-title {
+    position: sticky;
     margin-bottom: 0;
     background: none;
 }
 
-.game-modal-content {
-    position: fixed;
+.modal-content {
+    position: relative;
     max-width: none;
+    max-height: 500px;
     padding-bottom: 0;
     text-align: center;
 }
 
-.game-modal-table {
+.modal-open {
+    overflow: hidden;
+}
+
+.completion-modal-table {
     margin-bottom: 0;
 }
 

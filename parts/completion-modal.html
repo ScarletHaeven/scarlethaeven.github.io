@@ -1,12 +1,12 @@
-<dialog class="game-modal" ng-attr-open="{{isModalVisible ? 'open' : undefined}}" close-modal>
-    <article class="game-modal-content" ng-style="modalBackgroundStyling">
+<dialog class="modal completion-modal" ng-attr-open="{{isCompletionModalVisible ? 'open' : undefined}}" close-modal>
+    <article class="modal-content" ng-style="modalBackgroundStyling">
 
-        <header class="game-modal-title">
+        <header class="modal-title">
             <a class="close" ng-click="closeModal()"></a>
             <h1>{{ gameName }} Clears</h1>
         </header>
 
-        <figure class="game-modal-table">
+        <figure class="completion-modal-table">
             <table>
                 <thead>
                     <tr>

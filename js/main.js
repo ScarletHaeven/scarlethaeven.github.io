@@ -1,8 +1,8 @@
 const greetings = ["Hello!", "Hi!", "Hey there!", "Hey!", "Welcome!", "Yo!"]
 
-const app = angular.module('TouhouApp', []);
+const TouhouApp = angular.module('TouhouApp', []);
 
-app.directive('closeModal', function ($document) {
+TouhouApp.directive('closeModal', function ($document) {
     return {
         restrict: 'A',
         link: function (scope, element) {
@@ -30,16 +30,19 @@ app.directive('closeModal', function ($document) {
     };
 });
 
-app.controller('TouhouController', function ($scope, $http) {
+TouhouApp.controller('TouhouController', function ($scope, $http, $window, $timeout) {
     $scope.greeting = greetings[Math.floor(Math.random() * greetings.length)];
+
     $scope.isModalVisible = false;
+    $scope.isCompletionModalVisible = false;
+    $scope.isSocialMediaModalVisible = false;
+
     $scope.activePage = "completion-grid"
+    $window.document.title = "Ramzy's Touhou Site - Completion Grid"
 
-    $scope.displayModal = function (gameName) {
-
+    $scope.getCompletionModalDataAndOpenCompletionModal = function (gameName) {
         $http.get(`json/${gameName}.json`)
             .then(function (json) {
-                $scope.isModalVisible = true;
                 $scope.characters = json.data["characters"];
                 $scope.gameName = json.data["title_short"];
                 $scope.modalBackgroundStyling = {
@@ -47,13 +50,41 @@ app.controller('TouhouController', function ($scope, $http) {
                     "background-blend-mode": "darken",
                     "background-position": "50% 25%"
                 }
+
+                $scope.isModalVisible = true;
+                $scope.isCompletionModalVisible = true;
+                // $scope.activateModalTimeoutTransition()
             })
             .catch(function () {
                 alert("Game not added yet!")
             })
     }
 
+    $scope.displaySocialMediaModal = function () {
+        $timeout(function() {
+            $scope.isModalVisible = true;
+            $scope.isSocialMediaModalVisible = true;
+            $scope.changePageTitle('Where to find me')
+            // $scope.activateModalTimeoutTransition()
+        });
+    }
+
+    // $scope.activateModalTimeoutTransition = function () {
+    //     $timeout
+    // }
+
     $scope.closeModal = function () {
+        $scope.isCompletionModalVisible = false;
+        $scope.isSocialMediaModalVisible = false;
         $scope.isModalVisible = false;
+    }
+
+    $scope.changePage = function (pageName, pageTitle) {
+        $scope.activePage = pageName;
+        $scope.changePageTitle(pageTitle);
+    }
+
+    $scope.changePageTitle = function (pageTitle) {
+        $window.document.title = `Ramzy's Touhou Site - ${pageTitle}`
     }
 });
