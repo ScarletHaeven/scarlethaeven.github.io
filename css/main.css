@@ -104,9 +104,10 @@ a {
 .current-goals-grid-item {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     width: 1130px;
+    padding: 5px;
     border-radius: 10px;
 }
 
@@ -126,7 +127,7 @@ a {
 }
 
 .imperishable-night-goal {
-    background: rgba(0, 0, 0, 0.8) url('../media/game-images/TH08.jpg');
+    background: rgba(0, 0, 0, 0.9) url('../media/game-images/TH08.jpg');
     background-blend-mode: darken;
     background-position: center;
     background-size: cover;
