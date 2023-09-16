@@ -1,6 +1,6 @@
 body {
     min-height: 100vh; /* Remove later! */;
-    background: rgba(0, 0, 0, 0.75) url("../images/PrismriverWallpaper.png");
+    background: rgba(0, 0, 0, 0.75) url("../media/PrismriverWallpaper.png");
     background-attachment: fixed;
     background-blend-mode: darken;
     background-repeat: no-repeat;
@@ -14,6 +14,14 @@ header {
     margin-bottom: 15px;
     border-bottom: none !important;
 } 
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none !important;
+}
 
 table {
     height: fit-content;
@@ -86,31 +94,63 @@ a {
     grid-column: 3;
 }
 
+.current-goals-grid {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
+.current-goals-grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1130px;
+    border-radius: 10px;
+}
+
+.goal-name {
+    margin: 0px;
+    padding: 0px;
+}
+
+.goal-personal-best {
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.goal-progress-bar {
+    width: 75%;
+    margin-top: 10px
+}
+
+.imperishable-night-goal {
+    background: rgba(0, 0, 0, 0.8) url('../media/game-images/TH08.jpg');
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+}
+
 .modal {
     position: fixed;
-    overflow: scroll;
-}
-
-.modal-title {
-    position: sticky;
-    margin-bottom: 0;
-    background: none;
-}
-
-.modal-content {
-    position: relative;
-    max-width: none;
-    max-height: 500px;
-    padding-bottom: 0;
-    text-align: center;
 }
 
 .modal-open {
     overflow: hidden;
 }
 
-.completion-modal-table {
+.modal-content {
+    position: fixed;
+    max-width: none;
+    max-height: 500px;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.modal-title {
     margin-bottom: 0;
+    background: none
 }
 
 .close {
@@ -118,4 +158,20 @@ a {
     top: 20px;
     right: 20px;
     cursor: pointer;
+}
+
+.completion-modal-table {
+    margin-bottom: 0;
+}
+
+.social-media-modal-content {
+    width: 600px;
+    background: rgba(0, 0, 0, 0.9) url('../media/boop.gif');
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+}
+
+.not-yet-available {
+    cursor: not-allowed
 }

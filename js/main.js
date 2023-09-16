@@ -1,5 +1,4 @@
 const greetings = ["Hello!", "Hi!", "Hey there!", "Hey!", "Welcome!", "Yo!"]
-
 const TouhouApp = angular.module('TouhouApp', []);
 
 TouhouApp.directive('closeModal', function ($document) {
@@ -46,14 +45,13 @@ TouhouApp.controller('TouhouController', function ($scope, $http, $window, $time
                 $scope.characters = json.data["characters"];
                 $scope.gameName = json.data["title_short"];
                 $scope.modalBackgroundStyling = {
-                    "background": `rgba(0, 0, 0, 0.9) url('../images/game-images/${gameName}.jpg')`,
+                    "background": `rgba(0, 0, 0, 0.9) url('../media/game-images/${gameName}.jpg')`,
                     "background-blend-mode": "darken",
                     "background-position": "50% 25%"
                 }
 
                 $scope.isModalVisible = true;
                 $scope.isCompletionModalVisible = true;
-                // $scope.activateModalTimeoutTransition()
             })
             .catch(function () {
                 alert("Game not added yet!")
@@ -64,14 +62,9 @@ TouhouApp.controller('TouhouController', function ($scope, $http, $window, $time
         $timeout(function() {
             $scope.isModalVisible = true;
             $scope.isSocialMediaModalVisible = true;
-            $scope.changePageTitle('Where to find me')
-            // $scope.activateModalTimeoutTransition()
+            $scope.changePageTitle("Where To Find Me")
         });
     }
-
-    // $scope.activateModalTimeoutTransition = function () {
-    //     $timeout
-    // }
 
     $scope.closeModal = function () {
         $scope.isCompletionModalVisible = false;

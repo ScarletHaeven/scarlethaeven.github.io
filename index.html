@@ -4,36 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/fontawesome.min.css">
     <link rel="stylesheet" href="css/pico.min.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/angular.min.js"></script>
     <script src="js/main.js"></script>
-    <title></title>
+    <title>Ramzy's Touhou Site</title>
 </head>
 
 <body ng-app="TouhouApp" ng-controller="TouhouController" ng-class="{'modal-open': isModalVisible}">
+
     <main class="container">
 
         <header>
-            <a href="https://www.youtube.com/channel/UCcD30b5b3wGlxQQHwvnXwEw" target="_blank"><img class="scarlet-logo"src="images/ScarletPFP.png"></img></a>
+            <a href="https://www.youtube.com/channel/UCcD30b5b3wGlxQQHwvnXwEw" target="_blank"><img class="scarlet-logo"src="media/ScarletPFP.png"></img></a>
             <h1>{{ greeting }}</h1>
         </header>
 
         <div class="grid button-grid">
             <button class="grid-button" ng-if="activePage != 'completion-grid'" ng-click="changePage('completion-grid', 'Completion Grid')">Completion Grid</button>
             <button class="grid-button" ng-if="activePage != 'current-goals'" ng-click="changePage('current-goals', 'Current Goals')">Current Goals</button>
-            <button class="grid-button" ng-if="activePage != 'where-to-find-me'" ng-click="displaySocialMediaModal()">Where to find me</button>
-            <button class="grid-button" ng-if="activePage != 'contact'" ng-click="changePage('contact', 'Contact?!')">Contact?!</button>
+            <button class="grid-button" ng-if="activePage != 'where-to-find-me'" ng-click="displaySocialMediaModal()">Where To Find Me</button>
+            <button class="grid-button not-yet-available" ng-if="activePage != 'contact'">Contact</button>
         </div>
     
         <div ng-if="activePage == 'completion-grid'" ng-include="'parts/completion-grid.html'"></div>
         <div ng-if="activePage == 'completion-grid'" ng-include="'parts/completion-modal.html'"></div>
 
+        <div ng-if="activePage == 'current-goals'" ng-include="'parts/current-goals.html'"></div>
+
         <div ng-include="'parts/social-media-modal.html'"></div>
 
     </main>
+    
 </body>
 
 </html>
