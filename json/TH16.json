@@ -22,7 +22,7 @@
                 "link": ""
             },
             "extra": {
-                "status": "Not Cleared",
+                "status": "X",
                 "link": ""
             }
         },
@@ -45,7 +45,7 @@
                 "link": ""
             },
             "extra": {
-                "status": "Not Cleared",
+                "status": "X",
                 "link": ""
             }
         },
@@ -68,7 +68,7 @@
                 "link": ""
             },
             "extra": {
-                "status": "Not Cleared",
+                "status": "X",
                 "link": ""
             }
         },
@@ -83,16 +83,39 @@
                 "link": ""
             },
             "hard": {
-                "status": "Not Cleared",
+                "status": "1cc",
+                "link": "https://www.youtube.com/watch?v=Y7q5xf54dBU"
+            },
+            "lunatic": {
+                "status": "NBNR",
+                "link": "https://www.youtube.com/watch?v=D6OJUitkAFY&t=857s"
+            },
+            "extra": {
+                "status": "X",
+                "link": ""
+            }
+        },
+        {
+            "name": "ReimuDo",
+            "easy": {
+                "status": "X",
+                "link": ""
+            },
+            "normal": {
+                "status": "X",
+                "link": ""
+            },
+            "hard": {
+                "status": "X",
                 "link": ""
             },
             "lunatic": {
-                "status": "Not Cleared",
+                "status": "X",
                 "link": ""
             },
             "extra": {
-                "status": "Not Cleared",
-                "link": ""
+                "status": "NBNR",
+                "link": "https://www.youtube.com/watch?v=qcKfXDrYwsc"
             }
         },
         {
@@ -114,7 +137,7 @@
                 "link": ""
             },
             "extra": {
-                "status": "Not Cleared",
+                "status": "X",
                 "link": ""
             }
         },
@@ -137,7 +160,7 @@
                 "link": ""
             },
             "extra": {
-                "status": "Not Cleared",
+                "status": "X",
                 "link": ""
             }
         },
@@ -160,7 +183,7 @@
                 "link": ""
             },
             "extra": {
-                "status": "Not Cleared",
+                "status": "X",
                 "link": ""
             }
         },
@@ -171,8 +194,8 @@
                 "link": ""
             },
             "normal": {
-                "status": "Not Cleared",
-                "link": ""
+                "status": "1cc",
+                "link": "https://www.youtube.com/watch?v=WliuWmJUVhc"
             },
             "hard": {
                 "status": "Not Cleared",
@@ -180,6 +203,29 @@
             },
             "lunatic": {
                 "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "X",
+                "link": ""
+            }
+        },
+        {
+            "name": "MarisaDo",
+            "easy": {
+                "status": "X",
+                "link": ""
+            },
+            "normal": {
+                "status": "X",
+                "link": ""
+            },
+            "hard": {
+                "status": "X",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "X",
                 "link": ""
             },
             "extra": {
@@ -206,7 +252,7 @@
                 "link": ""
             },
             "extra": {
-                "status": "Not Cleared",
+                "status": "X",
                 "link": ""
             }
         },
@@ -229,7 +275,7 @@
                 "link": ""
             },
             "extra": {
-                "status": "Not Cleared",
+                "status": "X",
                 "link": ""
             }
         },
@@ -252,7 +298,7 @@
                 "link": ""
             },
             "extra": {
-                "status": "Not Cleared",
+                "status": "X",
                 "link": ""
             }
         },
@@ -272,6 +318,29 @@
             },
             "lunatic": {
                 "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "X",
+                "link": ""
+            }
+        },
+        {
+            "name": "CirnoDo",
+            "easy": {
+                "status": "X",
+                "link": ""
+            },
+            "normal": {
+                "status": "X",
+                "link": ""
+            },
+            "hard": {
+                "status": "X",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "X",
                 "link": ""
             },
             "extra": {
@@ -298,7 +367,7 @@
                 "link": ""
             },
             "extra": {
-                "status": "Not Cleared",
+                "status": "X",
                 "link": ""
             }
         },
@@ -321,7 +390,7 @@
                 "link": ""
             },
             "extra": {
-                "status": "Not Cleared",
+                "status": "X",
                 "link": ""
             }
         },
@@ -344,7 +413,7 @@
                 "link": ""
             },
             "extra": {
-                "status": "Not Cleared",
+                "status": "X",
                 "link": ""
             }
         },
@@ -364,6 +433,29 @@
             },
             "lunatic": {
                 "status": "Not Cleared",
+                "link": ""
+            },
+            "extra": {
+                "status": "X",
+                "link": ""
+            }
+        },
+        {
+            "name": "AyaDo",
+            "easy": {
+                "status": "X",
+                "link": ""
+            },
+            "normal": {
+                "status": "X",
+                "link": ""
+            },
+            "hard": {
+                "status": "X",
+                "link": ""
+            },
+            "lunatic": {
+                "status": "X",
                 "link": ""
             },
             "extra": {

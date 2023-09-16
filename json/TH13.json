@@ -10,20 +10,20 @@
                 "link": ""
             },
             "normal": {
-                "status": "Not Cleared",
-                "link": ""
+                "status": "1cc",
+                "link": "https://www.youtube.com/watch?v=rlu7AX3gSo0"
             },
             "hard": {
-                "status": "Not Cleared",
+                "status": "No Bomb",
                 "link": ""
             },
             "lunatic": {
-                "status": "Not Cleared",
-                "link": ""
+                "status": "1cc",
+                "link": "https://www.youtube.com/watch?v=0CL23ASh7vI"
             },
             "extra": {
-                "status": "Not Cleared",
-                "link": ""
+                "status": "NBNT",
+                "link": "https://www.youtube.com/watch?v=xnCzwDdSJM4"
             }
         },
         {

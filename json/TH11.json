@@ -10,20 +10,20 @@
                 "link": ""
             },
             "normal": {
-                "status": "Not Cleared",
-                "link": ""
+                "status": "1cc",
+                "link": "https://www.youtube.com/watch?v=wy8s8l4swfA"
             },
             "hard": {
-                "status": "Not Cleared",
-                "link": ""
+                "status": "1cc",
+                "link": "https://www.youtube.com/watch?v=6gQLyq6_PE0"
             },
             "lunatic": {
-                "status": "Not Cleared",
-                "link": ""
+                "status": "1cc",
+                "link": "https://www.youtube.com/watch?v=82k1EOPvik8&t=1217s"
             },
             "extra": {
-                "status": "Not Cleared",
-                "link": ""
+                "status": "Perfect",
+                "link": "https://www.youtube.com/watch?v=V6oxCm6-Trw&t=275s"
             }
         },
         {
@@ -110,8 +110,8 @@
                 "link": ""
             },
             "lunatic": {
-                "status": "Not Cleared",
-                "link": ""
+                "status": "No Bomb",
+                "link": "https://www.youtube.com/watch?v=J6j_EadVnWQ&t=6s"
             },
             "extra": {
                 "status": "Not Cleared",

@@ -67,21 +67,21 @@ a {
     box-shadow: none;
 }
 
-.game-image-grid {
+.completion-grid {
     display: grid;
     gap: 25px;
     grid-template-columns: repeat(4, 1fr);
     place-items: center;
 }
 
-.grid-image {
+.completion-grid-image {
     width: 250px;
     background-color: hsl(0, 0%, 100%);
     cursor: pointer;
     transition: 0.25s;
 }
 
-.grid-image:hover {
+.completion-grid-image:hover {
     transform: scale(1.1);
     transition: 0.25s;
 }
