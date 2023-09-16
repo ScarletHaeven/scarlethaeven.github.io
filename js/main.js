@@ -37,7 +37,7 @@ TouhouApp.controller('TouhouController', function ($scope, $http, $window, $time
     $scope.isSocialMediaModalVisible = false;
 
     $scope.activePage = "completion-grid"
-    $window.document.title = "Ramzy's Touhou Site - Completion Grid"
+    $window.document.title = "Scarlet's Touhou Site - Completion Grid"
 
     $scope.getCompletionModalDataAndOpenCompletionModal = function (gameName) {
         $http.get(`json/${gameName}.json`)
