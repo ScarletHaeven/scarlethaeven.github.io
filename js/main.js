@@ -1,4 +1,4 @@
-const greetings = ["Hello!", "Hi!", "Hey there!", "Hey!", "Welcome!", "Yo!"]
+const greetings = ["Hello!", "Hi!", "Hey there!", "Hey!", "Welcome!", "Yo!", "Fuck it, right?"]
 const TouhouApp = angular.module('TouhouApp', []);
 
 TouhouApp.directive('closeModal', function ($document) {
