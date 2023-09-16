@@ -47,7 +47,9 @@ TouhouApp.controller('TouhouController', function ($scope, $http, $window, $time
                 $scope.modalBackgroundStyling = {
                     "background": `rgba(0, 0, 0, 0.9) url('../media/game-images/${gameName}.jpg')`,
                     "background-blend-mode": "darken",
-                    "background-position": "50% 25%"
+                    "background-position": "50% 25%",
+                    "background-size": "cover",
+                    "backdrop-filter": "blur(8px)",
                 }
 
                 $scope.isModalVisible = true;
