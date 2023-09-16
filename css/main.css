@@ -1,5 +1,5 @@
 body {
-    min-height: 100vh; /* Remove later! */;
+    min-height: 100vh;
     background: rgba(0, 0, 0, 0.75) url("../media/PrismriverWallpaper.png");
     background-attachment: fixed;
     background-blend-mode: darken;
@@ -143,9 +143,10 @@ a {
 .modal-content {
     position: fixed;
     max-width: none;
-    max-height: 500px;
+    max-height: 550px;
     padding-bottom: 0;
     text-align: center;
+    overflow-y: auto
 }
 
 .modal-title {
