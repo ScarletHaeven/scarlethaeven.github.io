@@ -127,7 +127,7 @@ a {
 }
 
 .imperishable-night-goal {
-    background: rgba(0, 0, 0, 0.9) url('../media/game-images/TH08.jpg');
+    background: rgba(0, 0, 0, 0.85) url('../media/game-images/TH08.jpg');
     background-blend-mode: darken;
     background-position: center;
     background-size: cover;
