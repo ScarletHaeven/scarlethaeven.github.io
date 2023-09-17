@@ -26,7 +26,6 @@
             <button class="grid-button" ng-if="activePage != 'completion-grid'" ng-click="changePage('completion-grid', 'Completion Grid')">Completion Grid</button>
             <button class="grid-button" ng-if="activePage != 'current-goals'" ng-click="changePage('current-goals', 'Current Goals')">Current Goals</button>
             <button class="grid-button" ng-if="activePage != 'where-to-find-me'" ng-click="displaySocialMediaModal()">Where To Find Me</button>
-            <button class="grid-button not-yet-available" ng-if="activePage != 'contact'">Contact</button>
         </div>
     
         <div ng-if="activePage == 'completion-grid'" ng-include="'parts/completion-grid.html'"></div>
