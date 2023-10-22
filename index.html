@@ -6,35 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/fontawesome.min.css">
-    <link rel="stylesheet" href="css/pico.min.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/angular.min.js"></script>
     <script src="js/main.js"></script>
-    <title>Scarlet's Touhou Site</title>
+    <title>Under Construction</title>
 </head>
 
-<body ng-app="TouhouApp" ng-controller="TouhouController" ng-class="{'modal-open': isModalVisible}">
+<body ng-app="ScarletApp" ng-controller="ScarletController">
 
     <main class="container">
 
-        <header>
-            <a href="https://www.youtube.com/channel/UCcD30b5b3wGlxQQHwvnXwEw" target="_blank"><img class="scarlet-logo"src="media/ScarletPFP.png"></img></a>
-            <h1>{{ greeting }}</h1>
-        </header>
+        <h1 class="mystery-text">Under construction.</h1>
 
-        <div class="grid button-grid">
-            <button class="grid-button" ng-if="activePage != 'completion-grid'" ng-click="changePage('completion-grid', 'Completion Grid')">Completion Grid</button>
-            <button class="grid-button" ng-if="activePage != 'current-goals'" ng-click="changePage('current-goals', 'Current Goals')">Current Goals</button>
-            <button class="grid-button" ng-if="activePage != 'where-to-find-me'" ng-click="displaySocialMediaModal()">Where To Find Me</button>
-        </div>
-    
-        <div ng-if="activePage == 'completion-grid'" ng-include="'parts/completion-grid.html'"></div>
-        <div ng-if="activePage == 'completion-grid'" ng-include="'parts/completion-modal.html'"></div>
-
-        <div ng-if="activePage == 'current-goals'" ng-include="'parts/current-goals.html'"></div>
-
-        <div ng-include="'parts/social-media-modal.html'"></div>
-
+        <h1 class="mystery-text">:)</h1>
+        
     </main>
     
 </body>

@@ -1,179 +1,20 @@
-body {
-    min-height: 100vh;
-    background: rgba(0, 0, 0, 0.75) url("../media/PrismriverWallpaper.png");
-    background-attachment: fixed;
-    background-blend-mode: darken;
-    background-repeat: no-repeat;
-}
+/* No reset for now! Ha! */
 
-h1 {
+/* * {
     margin: 0;
-}
-
-header {
-    margin-bottom: 15px;
-    border-bottom: none !important;
-} 
-
-ul {
     padding: 0;
+} */
+
+
+/* || General Styles */
+
+body {
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-li {
-    list-style-type: none !important;
-}
+/* || Specific Classes */
 
-table {
-    height: fit-content;
-}
-
-th, td {
-    border: none;
-    text-align: center;
-}
-
-a {
-    text-decoration: none !important;
-}
-
-.container {
-    text-align: center;
-}
-
-.scarlet-logo {
-    width: 125px;
-    margin-bottom: 10px;
-    border-radius: 50%;
-    transition: 0.25s;
-}
-
-.scarlet-logo:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-
-.button-grid {
-    margin-bottom: 15px;
-}
-
-.grid-button {    
-    background: rgba(0, 0, 0, 0.7);
-    background-blend-mode: darken;
-    border: none;
-    cursor: pointer;
-}
-
-.grid-button:active, .grid-button:focus {
-    box-shadow: none;
-}
-
-.completion-grid {
-    display: grid;
-    gap: 25px;
-    grid-template-columns: repeat(4, 1fr);
-    place-items: center;
-}
-
-.completion-grid-image {
-    width: 250px;
-    background-color: hsl(0, 0%, 100%);
-    cursor: pointer;
-    transition: 0.25s;
-}
-
-.completion-grid-image:hover {
-    transform: scale(1.1);
-    transition: 0.25s;
-}
-
-.grid-column-two {
-    grid-column: 2;
-}
-
-.grid-column-three {
-    grid-column: 3;
-}
-
-.current-goals-grid {
-    display: grid;
-    gap: 25px;
-    grid-template-columns: 1fr;
-    place-items: center;
-}
-
-.current-goals-grid-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 1130px;
-    padding: 5px;
-    border-radius: 10px;
-}
-
-.goal-name {
-    margin: 0px;
-    padding: 0px;
-}
-
-.goal-personal-best {
-    margin-bottom: 10px;
-    font-style: italic;
-}
-
-.goal-progress-bar {
-    width: 75%;
-    margin-top: 10px
-}
-
-.imperishable-night-goal {
-    background: rgba(0, 0, 0, 0.85) url('../media/game-images/TH08.jpg');
-    background-blend-mode: darken;
-    background-position: center;
-    background-size: cover;
-}
-
-.modal {
-    position: fixed;
-}
-
-.modal-open {
-    overflow: hidden;
-}
-
-.modal-content {
-    position: fixed;
-    max-width: none;
-    max-height: 550px;
-    padding-bottom: 0;
-    text-align: center;
-    overflow-y: auto
-}
-
-.modal-title {
-    margin-bottom: 0;
-    background: none
-}
-
-.close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-}
-
-.completion-modal-table {
-    margin-bottom: 0;
-}
-
-.social-media-modal-content {
-    width: 600px;
-    background: rgba(0, 0, 0, 0.9) url('../media/boop.gif');
-    background-blend-mode: darken;
-    background-position: center;
-    background-size: cover;
-}
-
-.not-yet-available {
-    cursor: not-allowed
+.mystery-text {
+    color: white;
 }
