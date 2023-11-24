@@ -7,21 +7,50 @@
 
     <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
 
-    <title>Under Construction</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <title>My Page</title>
 </head>
 
-<body>
+<body ng-app="ScarletApp" ng-controller="ScarletController" ng-class="simplifiedView ? 'simplified-view' : 'standard-view'">
+
+    <header class="header">
+        <h1 class="page-title">{{ pageTitle }}</h1>
+        <p class="question" ng-click="whatIsThis()">what is this?</p>
+    </header>
 
     <main class="container">
 
-        <h1 class="mystery-text">Under construction.</h1>
+        <div class="album-quote-showcase">
 
-        <h1 class="mystery-text">:)</h1>
-        
+            <div class="album-info-container">
+                <p class="album-info">{{ currentQuote.album }} - {{ currentQuote.artist }}</p>
+                <img class="album-image" ng-src="{{ currentQuote.image }}">
+            </div>
+
+            <div class="track-quote-container">
+                <p class="track-quote">"{{ currentQuote.quote }}"</p>
+                <p class="track-info">– {{ currentQuote.track }} (Track {{ currentQuote.trackNumber }})</p>
+            </div>
+
+        </div>
+
     </main>
     
+    <footer class="footer">
+        <li class="footer-item footer-button" ng-click="randomQuoteActive ? null : setRandomQuote()">Change Album</li>
+        <li class="footer-item">|</li>
+        <li class="footer-item">Made by ScarletHaeven</li>
+        <li class="footer-item view-changer-section">|</li>
+        <li class="footer-item footer-button view-changer-section" ng-hide="simplifiedView" ng-click="setSimplifiedView()">Simplified View</li>
+        <li class="footer-item footer-button view-changer-section" ng-show="simplifiedView" ng-click="setStandardView()">Standard View</li>
+    </footer>
+
 </body>
 
 </html>

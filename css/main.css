@@ -1,20 +1,175 @@
-/* No reset for now! Ha! */
-
-/* * {
+* {
     margin: 0;
     padding: 0;
-} */
-
-
-/* || General Styles */
-
-body {
-    background-color: black;
-    font-family: 'Courier New', Courier, monospace;
 }
 
-/* || Specific Classes */
-
-.mystery-text {
+body {
     color: white;
+    background-color: black;
+    font-family: "Open Sans" /*, Arial, Helvetica, Roboto, Lato, Montserrat, "Noto Sans", sans-serif*/;
+    min-height: 100vh;
+}
+
+p {
+    font-weight: 300;
+}
+
+.standard-view {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+}
+
+.simplified-view {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer {
+    opacity: 0;
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    list-style: none;
+}
+
+.page-title {
+    opacity: 0;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.question {
+    opacity: 0;
+    text-decoration: underline;
+    cursor: pointer;
+    user-select: none;
+}
+
+.album-quote-showcase {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 100%;
+}
+
+.album-image {
+    width: 100%;
+}
+
+.album-info-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.album-info {
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.track-quote-container {
+    width: 100%;
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.track-quote {
+    text-align: left;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.track-info {
+    text-align: right;
+}
+
+.footer-item {
+    user-select: none;
+    font-weight: 300;
+}
+
+.footer-button {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.fade-out {
+    opacity: 1;
+    animation: fadeOut 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    body, .standard-view {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .view-changer-section {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .header {
+        text-align: center;
+    }
+
+    .album-quote-showcase {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .album-quote-showcase {
+        width: 300px;
+    }
 }

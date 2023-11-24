@@ -1,0 +1,164 @@
+[
+    {
+        "quote": "I can't believe how far we've come!",
+        "track": "Prism of Doubt",
+        "trackNumber": 3,
+        "album": "Brighten",
+        "artist": "Jerry Cantrell",
+        "image": "media/albums/Brighten.jpg"
+    },
+    {
+        "quote": "You reach out to hold my hand - please, don't you dare.",
+        "track": "Cold Dark Place",
+        "trackNumber": 4,
+        "album": "Cold Dark Place",
+        "artist": "Mastodon",
+        "image": "media/albums/ColdDarkPlace.jpg"
+    },
+    {
+        "quote": "I came toe to toe and face to face with the beast.",
+        "track": "Toe to Toes",
+        "trackNumber": 3,
+        "album": "Cold Dark Place",
+        "artist": "Mastodon",
+        "image": "media/albums/ColdDarkPlace.jpg"
+    },
+    {
+        "quote": "Lie to me... you're faceless.",
+        "track": "Faceless",
+        "trackNumber": 2,
+        "album": "Faceless",
+        "artist": "Godsmack",
+        "image": "media/albums/Faceless.jpg"
+    },
+    {
+        "quote": "Where do we go when we just don't know, and how do we relight the flame when it's cold?",
+        "track": "Serenity",
+        "trackNumber": 12,
+        "album": "Faceless",
+        "artist": "Godsmack",
+        "image": "media/albums/Faceless.jpg"
+    },
+    {
+        "quote": "Through me you feel the void from where the sad sounds come.",
+        "track": "Feel The Void",
+        "trackNumber": 10,
+        "album": "Degradation Trip Volumes 1 & 2",
+        "artist": "Jerry Cantrell",
+        "image": "media/albums/DegradationTripVolumes1And2.jpg"
+    },
+    {
+        "quote": "Free return alone in time to see the sun go black.",
+        "track": "Feel The Void",
+        "trackNumber": 10,
+        "album": "Degradation Trip Volumes 1 & 2",
+        "artist": "Jerry Cantrell",
+        "image": "media/albums/DegradationTripVolumes1And2.jpg"
+    },
+    {
+        "quote": "Ooh, I'm locked and loaded... you'll get no respect!",
+        "track": "Locked & Loaded",
+        "trackNumber": 6,
+        "album": "1000hp",
+        "artist": "Godsmack",
+        "image": "media/albums/1000hp.jpg"
+    },
+    {
+        "quote": "I don't know my name... I've turned against my own.",
+        "track": "Turning To Stone",
+        "trackNumber": 10,
+        "album": "1000hp",
+        "artist": "Godsmack",
+        "image": "media/albums/1000hp.jpg"
+    },
+    {
+        "quote": "Why's it have to be this way?",
+        "track": "Frogs",
+        "trackNumber": 11,
+        "album": "Alice In Chains",
+        "artist": "Alice In Chains",
+        "image": "media/albums/AliceInChains.jpg"
+    },
+    {
+        "quote": "We pay our debt sometime.",
+        "track": "Over Now",
+        "trackNumber": 12,
+        "album": "Alice In Chains",
+        "artist": "Alice In Chains",
+        "image": "media/albums/AliceInChains.jpg"
+    },
+    {
+        "quote": "Man, I nearly snapped my twig... then again, I nearly snapped a few of you.",
+        "track": "So Close",
+        "trackNumber": 9,
+        "album": "Alice In Chains",
+        "artist": "Alice In Chains",
+        "image": "media/albums/AliceInChains.jpg"
+    },
+    {
+        "quote": "But the hand of GOD just SMACKED you back into yesterday!",
+        "track": "Cryin' Like A Bitch!!",
+        "trackNumber": 1,
+        "album": "The Oracle",
+        "artist": "Godsmack",
+        "image": "media/albums/TheOracle.jpg"
+    },
+    {
+        "quote": "It turns to silence... a silence sometimes I can hear.",
+        "track": "What If?",
+        "trackNumber": 5,
+        "album": "The Oracle",
+        "artist": "Godsmack",
+        "image": "media/albums/TheOracle.jpg"
+    },
+    {
+        "quote": "I am not covered in thorns, nor am I covered in mould.",
+        "track": "Antechamber",
+        "trackNumber": 2,
+        "album": "Agonist",
+        "artist": "Latitudes",
+        "image": "media/albums/Agonist.jpg"
+    },
+    {
+        "quote": "The flame is gone... the fire remains.",
+        "track": "Battesimo Del Fuoco",
+        "trackNumber": 1,
+        "album": "Act I: The Lake South, The River North",
+        "artist": "The Dear Hunter",
+        "image": "media/albums/TDHAct1.jpg"
+    },
+    {
+        "quote": "Believe you me, the price is clear.",
+        "track": "Battesimo Del Fuoco",
+        "trackNumber": 1,
+        "album": "Act I: The Lake South, The River North",
+        "artist": "The Dear Hunter",
+        "image": "media/albums/TDHAct1.jpg"
+    },
+    {
+        "quote": "There's my suitor, struggling to find his footing!",
+        "track": "The Squeaky Wheel",
+        "trackNumber": 8,
+        "album": "Act IV: Rebirth in Reprise",
+        "artist": "The Dear Hunter",
+        "image": "media/albums/TDHAct4.jpg"
+    },
+    {
+        "quote": "It's the end of the line for you and I.",
+        "track": "The Line",
+        "trackNumber": 13,
+        "album": "Act IV: Rebirth in Reprise",
+        "artist": "The Dear Hunter",
+        "image": "media/albums/TDHAct4.jpg"
+    },
+    {
+        "quote": "Misery, she fills me - oh, no, but she's not what I'm livin' for!",
+        "track": "Inamorata",
+        "trackNumber": 12,
+        "album": "72 Seasons",
+        "artist": "Metallica",
+        "image": "media/albums/72Seasons.jpg"
+    }
+]
+
+
