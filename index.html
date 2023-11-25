@@ -21,6 +21,7 @@
 
     <header class="header">
         <h1 class="page-title">{{ pageTitle }}</h1>
+        <h1 class="page-title short-page-title">{{ shortPageTitle }}</h1>
         <p class="question" ng-click="whatIsThis()">what is this?</p>
     </header>
 
@@ -29,26 +30,34 @@
         <div class="album-quote-showcase">
 
             <div class="album-info-container">
-                <p class="album-info">{{ currentQuote.album }} - {{ currentQuote.artist }}</p>
-                <img class="album-image" id="albumImage" ng-src="{{ currentQuote.image }}">
+                <p class="album-info">{{ currentAlbum.name }} - {{ currentArtist.name }}</p>
+                <img class="album-image" id="albumImage" ng-src="{{ currentAlbum.image }}">
             </div>
 
             <div class="track-quote-container">
-                <p class="track-quote">"{{ currentQuote.quote }}"</p>
-                <p class="track-info">– {{ currentQuote.track }} (Track {{ currentQuote.trackNumber }})</p>
+                <p class="track-quote">"{{ currentQuote }}"</p>
+                <p class="track-info">– {{ currentTrack.track }} (Track {{ currentTrack.trackNumber }})</p>
             </div>
 
         </div>
 
     </main>
     
-    <footer class="footer">
+    <footer class="footer standard-footer" ng-show="!specialFooter">
         <li class="footer-item footer-button" ng-click="randomQuoteActive ? null : setRandomQuote()">Change Album</li>
         <li class="footer-item">|</li>
-        <li class="footer-item">Made by ScarletHaeven</li>
+        <li class="footer-item">Made by <span class="scarlethaeven" ng-click="setFooterQuote()">ScarletHaeven</span> (1.1)</li>
         <li class="footer-item view-changer-section">|</li>
         <li class="footer-item footer-button view-changer-section" ng-hide="simplifiedView" ng-click="setSimplifiedView()">Simplified View</li>
         <li class="footer-item footer-button view-changer-section" ng-show="simplifiedView" ng-click="setStandardView()">Standard View</li>
+    </footer>
+
+    <footer class="footer special-footer bigger-special-footer" ng-show="specialFooter">
+        <li class="footer-item special-quote">And though it hurts, embrace the truth... and, from fear, be set free.</li>
+    </footer>
+
+    <footer class="footer special-footer smaller-special-footer" ng-show="specialFooter">
+        <li class="footer-item special-quote">31/32.</li>
     </footer>
 
 </body>

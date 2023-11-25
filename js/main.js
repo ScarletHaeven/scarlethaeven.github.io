@@ -2,11 +2,7 @@ const ScarletApp = angular.module('ScarletApp', []);
 
 ScarletApp.controller('ScarletController', function ($scope, $http, $timeout) {
     $scope.pageTitle = "welcome to my website."
-    $scope.currentQuoteIndex = 0;
-    $scope.randomQuoteActive = false;
-    $scope.whatIsThisActive = false;
-    $scope.quotes = [];
-    $scope.movedQuotes = [];
+    $scope.shortPageTitle = "welcome."
 
     $scope.loadDataAndAnimate = async function () {
         await $scope.getQuoteData();
@@ -15,18 +11,46 @@ ScarletApp.controller('ScarletController', function ($scope, $http, $timeout) {
             var mainElementSelectors = ['.page-title', '.album-quote-showcase', '.footer', '.question'];
 
             for (var selector of mainElementSelectors) {
-                var element = document.querySelector(selector);
-                await fadeInElement(element, element.opacity);
+                var elements = document.querySelectorAll(selector);
+
+                if (elements.length > 1) {
+                    // If there are more than one element, load them concurrently
+                    var fadeInPromises = Array.from(elements).map(async function (element) {
+                        return fadeInElement(element, parseFloat(element.style.opacity) || 0);
+                    });
+
+                    await Promise.all(fadeInPromises);
+                } else if (elements.length === 1) {
+                    // If there is only one element, load it sequentially
+                    await fadeInElement(elements[0], parseFloat(elements[0].style.opacity) || 0);
+                }
             }
         });
+    }
+
+    $scope.setQuote = function (artist, album, track, quote) {
+        $scope.currentArtist = artist
+        $scope.currentAlbum = album
+        $scope.currentTrack = track
+        $scope.currentQuote = quote
+    }
+
+    $scope.selectFirstQuote = function () {
+        const JerryCantrell = $scope.artists[0]
+        const Brighten = JerryCantrell['albums'][0]
+        const PrismOfDoubt = Brighten['tracks'][0]
+        const FavoriteQuote = PrismOfDoubt['quotes'][0]
+
+        $scope.setQuote(JerryCantrell, Brighten, PrismOfDoubt, FavoriteQuote)
     }
 
     $scope.getQuoteData = async function () {
         try {
             var response = await $http.get('json/quotes.json');
-            $scope.quotes = response.data;
-            $scope.currentQuote = $scope.quotes[0];
-            $scope.quotes.splice(0, 1)
+            $scope.data = response.data;
+            $scope.artists = $scope.data['artists']
+
+            $scope.selectFirstQuote()
         } catch (error) {
             console.error('Error fetching data:', error);
         }
@@ -38,44 +62,42 @@ ScarletApp.controller('ScarletController', function ($scope, $http, $timeout) {
         }
 
         $scope.randomQuoteActive = true;
+        $scope.imageLoaded = false;
 
-        var albumQuoteShowcase = document.querySelector('.album-quote-showcase');
-        var albumImage = document.getElementById('albumImage');
+        $scope.albumQuoteShowcase = document.querySelector('.album-quote-showcase');
+        $scope.albumImage = document.getElementById('albumImage');
 
-        var removedQuote = $scope.quotes.splice($scope.currentQuoteIndex, 1)[0];
-        $scope.movedQuotes.push(removedQuote);
-
-        if ($scope.quotes.length == 0) {
-            $scope.quotes = $scope.quotes.concat($scope.movedQuotes);
-            $scope.movedQuotes = [];
-        }
-
-        $scope.currentQuoteIndex = Math.floor(Math.random() * $scope.quotes.length)
+        var randomArtist = getRandomElement($scope.artists)
+        var randomAlbumFromArtist = getRandomElement(randomArtist['albums'])
+        var randomTrackFromAlbum = getRandomElement(randomAlbumFromArtist['tracks'])
+        var randomQuoteFromTrack = getRandomElement(randomTrackFromAlbum['quotes'])
 
         await $timeout(async function () {
-            await fadeOutElement(albumQuoteShowcase, albumQuoteShowcase.opacity);
+            await fadeOutElement($scope.albumQuoteShowcase, $scope.albumQuoteShowcase.opacity);
         });
 
-        var imageLoaded = false;
+        $scope.setQuote(randomArtist, randomAlbumFromArtist, randomTrackFromAlbum, randomQuoteFromTrack)
+        $scope.handleAlbumImageLoading(randomAlbumFromArtist)
 
+        while (!$scope.imageLoaded) {
+            await $timeout();
+        }
+    }
+
+    $scope.handleAlbumImageLoading = async function (album) {
         var newImage = new Image();
 
         newImage.onload = function () {
-            $scope.currentQuote = $scope.quotes[$scope.currentQuoteIndex];
-            albumImage.src = newImage.src;
-            imageLoaded = true;
+            $scope.albumImage.src = newImage.src;
+            $scope.imageLoaded = true;
 
             $timeout(async function () {
-                await fadeInElement(albumQuoteShowcase, albumQuoteShowcase.opacity);
+                await fadeInElement($scope.albumQuoteShowcase, $scope.albumQuoteShowcase.opacity);
                 $scope.randomQuoteActive = false;
             });
         };
 
-        newImage.src = $scope.quotes[$scope.currentQuoteIndex].image;
-
-        while (!imageLoaded) {
-            await $timeout();
-        }
+        newImage.src = album.image
     }
 
     $scope.whatIsThis = async function () {
@@ -85,31 +107,91 @@ ScarletApp.controller('ScarletController', function ($scope, $http, $timeout) {
 
         $scope.whatIsThisActive = true;
 
-        var pageTitle = document.querySelector('.page-title')
+        var pageTitleElements = document.querySelectorAll('.page-title, .short-page-title');
 
-        await $timeout(async function () {
-            await fadeOutElement(pageTitle, pageTitle.opacity);
-        });
+        await Promise.all(Array.from(pageTitleElements).map(async (pageTitle) => {
+            await $timeout(async function () {
+                await fadeOutElement(pageTitle, pageTitle.opacity);
+            });
+        }));
 
-        $scope.pageTitle = "it's my website! :)"
+        $scope.pageTitle = "it's my website! :)";
+        $scope.shortPageTitle = "my website! :)";
 
-        await $timeout(async function () {
-            await fadeInElement(pageTitle, pageTitle.opacity);
-        })
+        await Promise.all(Array.from(pageTitleElements).map(async (pageTitle) => {
+            await $timeout(async function () {
+                await fadeInElement(pageTitle, pageTitle.opacity);
+            });
+        }));
 
         await $timeout(function () { }, 3000);
 
-        await $timeout(async function () {
-            await fadeOutElement(pageTitle, pageTitle.opacity);
-        })
+        await Promise.all(Array.from(pageTitleElements).map(async (pageTitle) => {
+            await $timeout(async function () {
+                await fadeOutElement(pageTitle, pageTitle.opacity);
+            });
+        }));
 
-        $scope.pageTitle = "welcome to my website."
+        $scope.pageTitle = "welcome to my website.";
+        $scope.shortPageTitle = "welcome.";
 
-        await $timeout(async function () {
-            await fadeInElement(pageTitle, pageTitle.opacity);
-        })
+        await Promise.all(Array.from(pageTitleElements).map(async (pageTitle) => {
+            await $timeout(async function () {
+                await fadeInElement(pageTitle, pageTitle.opacity);
+            });
+        }));
 
         $scope.whatIsThisActive = false;
+    }
+
+    $scope.setFooterQuote = async function () {
+        if (!$scope.amountClicked) {
+            $scope.amountClicked = 0;
+        }
+
+        if ($scope.amountClicked != 4) {
+            $scope.amountClicked++;
+            return;
+        }
+
+        if ($scope.specialFooterActive) {
+            return;
+        }
+
+        $scope.specialFooter = false;
+        $scope.specialFooterActive = true;
+
+        var standardFooterElement = document.querySelector('.standard-footer');
+        var specialFooterElements = document.querySelectorAll('.special-footer');
+
+        await $timeout(async function () {
+            await fadeOutElement(standardFooterElement, standardFooterElement.opacity);
+        });
+
+        $scope.specialFooter = true;
+
+        await Promise.all(Array.from(specialFooterElements).map(async (specialFooterElement) => {
+            await $timeout(async function () {
+                await fadeInElement(specialFooterElement, specialFooterElement.opacity);
+            });
+        }));
+
+        await $timeout(function () { }, 5000);
+
+        await Promise.all(Array.from(specialFooterElements).map(async (specialFooterElement) => {
+            await $timeout(async function () {
+                await fadeOutElement(specialFooterElement, specialFooterElement.opacity);
+            });
+        }));
+
+        $scope.specialFooter = false;
+
+        await $timeout(async function () {
+            await fadeInElement(standardFooterElement, standardFooterElement.opacity);
+        })
+
+        $scope.specialFooterActive = false;
+        $scope.amountClicked = 0;
     }
 
     $scope.setStandardView = function () {
@@ -127,7 +209,7 @@ ScarletApp.controller('ScarletController', function ($scope, $http, $timeout) {
 
 async function fadeInElement(element, opacity) {
     return new Promise(resolve => {
-        element.classList.remove('fade-out')
+        element.classList.remove('fade-out');
         element.classList.add('fade-in');
         element.style.opacity = opacity;
         setTimeout(() => {
@@ -138,11 +220,16 @@ async function fadeInElement(element, opacity) {
 
 async function fadeOutElement(element, opacity) {
     return new Promise(resolve => {
-        element.classList.remove('fade-in')
+        element.classList.remove('fade-in');
         element.classList.add('fade-out');
         element.style.opacity = opacity;
         setTimeout(() => {
             resolve();
         }, 1000);
     });
+}
+
+function getRandomElement(array) {
+    var randomIndex = Math.floor(Math.random() * array.length);
+    return array[randomIndex];
 }

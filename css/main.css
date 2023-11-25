@@ -6,7 +6,9 @@
 body {
     color: white;
     background-color: black;
-    font-family: "Open Sans" /*, Arial, Helvetica, Roboto, Lato, Montserrat, "Noto Sans", sans-serif*/;
+    font-family: "Open Sans"
+        /*, Arial, Helvetica, Roboto, Lato, Montserrat, "Noto Sans", sans-serif*/
+    ;
     min-height: 100vh;
 }
 
@@ -53,10 +55,15 @@ p {
     list-style: none;
 }
 
-.page-title {
+.page-title,
+.short-page-title {
     opacity: 0;
     font-size: 3rem;
     font-weight: 300;
+}
+
+.short-page-title {
+    display: none;
 }
 
 .question {
@@ -117,6 +124,10 @@ p {
     cursor: pointer;
 }
 
+.scarlethaeven {
+    cursor: pointer;
+}
+
 .fade-in {
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards;
@@ -125,6 +136,18 @@ p {
 .fade-out {
     opacity: 1;
     animation: fadeOut 1s ease-in-out forwards;
+}
+
+.visible {
+    opacity: 1;
+}
+
+.special-quote {
+    font-style: italic;
+}
+
+.smaller-special-footer {
+    display: none;
 }
 
 @keyframes fadeIn {
@@ -148,7 +171,9 @@ p {
 }
 
 @media only screen and (max-width: 1200px) {
-    body, .standard-view {
+
+    body,
+    .standard-view {
         display: flex;
         flex-direction: column;
     }
@@ -159,12 +184,32 @@ p {
 }
 
 @media only screen and (max-width: 560px) {
-    .header {
+
+    .header,
+    .track-quote,
+    .track-info,
+    .special-quote {
         text-align: center;
+    }
+
+    .page-title {
+        display: none;
+    }
+
+    .short-page-title {
+        display: block;
     }
 
     .album-quote-showcase {
         width: 400px;
+    }
+
+    .bigger-special-footer {
+        display: none;
+    }
+
+    .smaller-special-footer {
+        display: flex;
     }
 }
 
