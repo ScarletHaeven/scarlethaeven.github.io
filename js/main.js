@@ -41,10 +41,6 @@ ScarletApp.controller('ScarletController', function ($scope, $http, $timeout) {
 
         var albumQuoteShowcase = document.querySelector('.album-quote-showcase')
 
-        await $timeout(async function () {
-            await fadeOutElement(albumQuoteShowcase, albumQuoteShowcase.opacity);
-        });
-
         var removedQuote = $scope.quotes.splice($scope.currentQuoteIndex, 1)[0];
         $scope.movedQuotes.push(removedQuote);
 
@@ -54,8 +50,12 @@ ScarletApp.controller('ScarletController', function ($scope, $http, $timeout) {
         }
 
         $scope.currentQuoteIndex = Math.floor(Math.random() * $scope.quotes.length)
+
+        await $timeout(async function () {
+            await fadeOutElement(albumQuoteShowcase, albumQuoteShowcase.opacity);
+        });
+
         $scope.currentQuote = $scope.quotes[$scope.currentQuoteIndex];
-        console.log($scope.quotes)
 
         await $timeout(async function () {
             await fadeInElement(albumQuoteShowcase, albumQuoteShowcase.opacity);
