@@ -56,20 +56,26 @@ ScarletApp.controller('ScarletController', function ($scope, $http, $timeout) {
             await fadeOutElement(albumQuoteShowcase, albumQuoteShowcase.opacity);
         });
 
+        var imageLoaded = false;
+
         var newImage = new Image();
 
         newImage.onload = function () {
             $scope.currentQuote = $scope.quotes[$scope.currentQuoteIndex];
             albumImage.src = newImage.src;
+            imageLoaded = true;
 
             $timeout(async function () {
                 await fadeInElement(albumQuoteShowcase, albumQuoteShowcase.opacity);
+                $scope.randomQuoteActive = false;
             });
-
-            $scope.randomQuoteActive = false;
         };
 
         newImage.src = $scope.quotes[$scope.currentQuoteIndex].image;
+
+        while (!imageLoaded) {
+            await $timeout();
+        }
     }
 
     $scope.whatIsThis = async function () {
