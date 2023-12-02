@@ -247,6 +247,24 @@
             ]
         },
         {
+            "name": "Kyuss",
+            "albums": [
+                {
+                    "name": "Blues for the Red Sun",
+                    "image": "media/albums/BluesForTheRedSun.jpg",
+                    "tracks": [
+                        {
+                            "trackNumber": 10,
+                            "track": "Writhe",
+                            "quotes": [
+                                "Everyone seems to be servin' for Satan... guess I will too."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "name": "The Dear Hunter",
             "albums": [
                 {
