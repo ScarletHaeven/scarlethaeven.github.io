@@ -1,24 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="ScarletApp" ng-controller="ScarletController" >
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="media/favicon.ico" ng-href="{{ currentAlbum.image }}" type="image/x-icon">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
-
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <script src="js/main.js"></script>
-
-    <title>Welcome to my website.</title>
+    <title>"{{ currentQuote }}"</title>
 </head>
 
-<body ng-app="ScarletApp" ng-controller="ScarletController">
-        
-    <h1>Work in progress...</h1>
+<body>
+
+    <main>
+        <div class="album-quote-showcase">
+
+            <div class="album-info-container">
+                <p>{{ currentAlbum.name }} - {{ currentArtist.name }}</p>
+                <img ng-src="{{ currentAlbum.image }}">
+            </div>
+
+            <div class="track-quote-container">
+                <p class="track-quote">"{{ currentQuote }}"</p>
+                <p>– {{ currentTrack.track }} (Track {{ currentTrack.trackNumber }})</p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <ul>
+            <li ng-click="setRandomQuote()">Change Album</li>
+            <li>|</li>
+            <li>Still Work-in-Progress</li>
+            <li>|</li>
+            <li>Made by ScarletHaeven</li>
+        </ul>
+    </footer>
 
 </body>
 

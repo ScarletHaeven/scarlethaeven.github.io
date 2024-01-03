@@ -3,21 +3,66 @@
     padding: 0;
 }
 
+[ng-click] {
+    cursor: pointer;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: white;
     background-color: black;
-    font-family: "Open Sans";
-    min-height: 100vh;
-}
-
-h1, p {
-    font-weight: 300;
-}
-
-h1 {
-    font-size: 3rem;
+    font-family: "Open Sans", Arial, Helvetica, Roboto, Lato, Montserrat, "Noto Sans", sans-serif;
 }
 
 p {
     font-weight: 300;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.album-quote-showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.album-quote-showcase div {
+    text-align: center;
+}
+
+.album-info-container p {
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.track-quote-container {
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.track-quote {
+    font-size: 1.5rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+footer ul {
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+    list-style: none;
 }
