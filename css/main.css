@@ -14,7 +14,7 @@ body {
     align-items: center;
     color: white;
     background-color: black;
-    font-family: "Open Sans", Arial, Helvetica, Roboto, Lato, Montserrat, "Noto Sans", sans-serif;
+    min-height: 100vh;
 }
 
 p {
@@ -29,40 +29,6 @@ main {
     min-height: 100vh;
 }
 
-.album-quote-showcase {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-.album-quote-showcase div {
-    text-align: center;
-}
-
-.album-info-container p {
-    margin-bottom: 5px;
-    font-size: 1rem;
-}
-
-.track-quote-container {
-    margin-bottom: 5px;
+h1, h2 {
     font-style: italic;
-}
-
-.track-quote {
-    font-size: 1.5rem;
-}
-
-footer {
-    position: absolute;
-    bottom: 0;
-}
-
-footer ul {
-    display: flex;
-    gap: 5px;
-    padding: 10px;
-    list-style: none;
 }
