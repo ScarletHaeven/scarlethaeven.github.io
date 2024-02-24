@@ -1,34 +1,176 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-[ng-click] {
-    cursor: pointer;
+:root {
+    --primary-background-color: hsla(0, 0%, 95%, 0.8)
 }
+
+/* Default Styling + Utility Classes */
 
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    color: white;
-    background-color: black;
-    min-height: 100vh;
+    background-color: hsl(110, 45%, 80%);
+    background-image: url("../media/koishiwallpaper.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Open Sans";
 }
 
-p {
-    font-weight: 300;
+h1,
+h2,
+h3,
+h4 {
+    font-weight: normal;
 }
 
-main {
+li {
+    list-style-position: inside;
+}
+
+[ng-click],
+[data-ng-click],
+[x-ng-click] {
+    cursor: pointer;
+}
+
+.wrapper {
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    width: 50%;
+    margin-top: 25px;
+    margin-bottom: 25px
 }
 
-h1, h2 {
+.centered-text {
+    text-align: center !important;
+}
+
+/* Navigation */
+
+.navigation-bar {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--primary-background-color);
+}
+
+.navigation-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.navigation-link {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--primary-background-color);
+}
+
+.scarlet-pfp {
+    height: 100px;
+}
+
+.title {
+    font-size: 3rem;
     font-style: italic;
+}
+
+.small-quote {
+    font-style: italic;
+}
+
+/* Main Content */
+
+.main-content {
+    width: 100%;
+}
+
+.main-content>* {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    background-color: var(--primary-background-color);
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+
+.section-title {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 2.25rem;
+    text-align: center;
+}
+
+.larger-section-title {
+    margin-top: 30px;
+    font-size: 3rem;
+}
+
+.smaller-section-title {
+    font-size: 1.75rem;
+}
+
+.subtitle-text {
+    width: 100%;
+    margin-bottom: 25px;
+    text-align: center;
+    font-style: italic;
+}
+
+.section-content {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.back-to-top {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* FAQ */
+
+.faq-title {
+    margin-bottom: 0px;;
+}
+
+/* Socials */
+
+.link-list {
+    align-self: flex-start;
+    list-style: none;
 }

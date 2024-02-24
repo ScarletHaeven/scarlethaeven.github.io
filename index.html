@@ -6,16 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="media/favicon.ico" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"></script>
     <script src="js/main.js"></script>
-    <title>‎</title>
+    <title>Scarlet's Personal Page</title>
 </head>
 
-<body>
+<body ng-app="ScarletApp" ng-controller="ScarletController">
 
-    <main>
-        <h1>Yep.</h1>
-        <h2>It's WIP time.</h2>
-    </main>
+    <a id="top"></a>
+
+    <div class="wrapper">
+
+        <nav class="navigation-bar">
+            <ul class="navigation-links">
+                <li class="navigation-link" ng-click="togglePage('faq')">FAQ</li>
+                <li class="navigation-link" ng-click="togglePage('about-me')">About Me</li>
+                <li class="navigation-link" ng-click="togglePage('socials')">Socials</li>
+            </ul>
+        </nav>
+
+        <header>
+            <img class="scarlet-pfp" src="media/koishipfp.png">
+            <div>
+                <h1 class="title">ScarletHaeven</h1>
+                <p class="small-quote">"I can't believe how far we've come!"</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+
+            <div ng-include="'parts/about-me.html'" id="about-me" ng-show="currentPage == 'about-me'"></div>
+            <div ng-include="'parts/faq.html'" id="faq" ng-show="currentPage == 'faq'"></div>
+            <div ng-include="'parts/socials.html'" id="socials" ng-show="currentPage == 'socials'"></div>
+
+        </main>
+
+    </div>
 
 </body>
 
