@@ -164,13 +164,15 @@ header {
 
 /* FAQ */
 
-.faq-title {
+.title-with-subtitle {
     margin-bottom: 0px;;
 }
 
 /* Socials */
 
 .link-list {
-    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     list-style: none;
 }
