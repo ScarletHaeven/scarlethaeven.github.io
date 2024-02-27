@@ -24,7 +24,7 @@
             <ul class="navigation-links">
                 <li class="navigation-link" ng-click="togglePage('faq')">FAQ</li>
                 <li class="navigation-link" ng-click="togglePage('about-me')">About Me</li>
-                <li class="navigation-link" ng-click="togglePage('socials')">Socials</li>
+                <li class="navigation-link"><a href="https://linktr.ee/scarlethaeven">Linktree</a></li>
             </ul>
         </nav>
 
@@ -40,7 +40,6 @@
 
             <div ng-include="'parts/about-me.html'" id="about-me" ng-show="currentPage == 'about-me'"></div>
             <div ng-include="'parts/faq.html'" id="faq" ng-show="currentPage == 'faq'"></div>
-            <div ng-include="'parts/socials.html'" id="socials" ng-show="currentPage == 'socials'"></div>
 
         </main>
 
