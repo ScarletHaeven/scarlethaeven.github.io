@@ -1,0 +1,33 @@
+.wrapper {
+    width: 50%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+@media only screen and (max-width: 1600px) {
+    .wrapper {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .wrapper {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .wrapper {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .wrapper {
+        width: 90%;
+    }
+}

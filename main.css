@@ -1,147 +1,134 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --primary-background-color: hsla(0, 0%, 95%, 0.8)
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: hsl(110, 45%, 80%);
-    background-image: url("../media/koishiwallpaper.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: "Open Sans";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(110, 45%, 80%);
+  background-image: url("../media/koishiwallpaper.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Open Sans";
 }
 
+.wrapper {
+  width: 50%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1600px) {
+  .wrapper {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .wrapper {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .wrapper {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .wrapper {
+    width: 90%;
+  }
+}
 h1,
 h2,
 h3,
 h4 {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 h1 {
-    font-size: 3rem;
-    font-style: italic;
-}
-
-.centered-text {
-    text-align: center;
-}
-
-.wrapper { 
-    width: 50%;
-    margin-top: 25px;
-    margin-bottom: 25px
-}
-
-header {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: var(--primary-background-color);
-}
-
-.scarlet-pfp {
-    height: 100px;
-}
-
-.main-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-top: 10px;
-    background-color: var(--primary-background-color);
-}
-
-/* Page-Building */
-
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 70%;
-}
-
-.section-content {
-    width: 100%;
-}
-
-.section-content>* {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px
-}
-
-.section-content h2, .section-content h3 {
-    width: 100%;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.section-content h2 {
-    margin-top: 30px;
-    font-size: 3rem;
-}
-
-.section-content h3 {
-    font-size: 2.25rem;
+  font-size: 3rem;
+  font-style: italic;
 }
 
 .footer-link {
-    width: 100%;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    text-align: center;
-    text-decoration: underline;
-    cursor: pointer;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
-/* Media Queries */
-
-@media only screen and (max-width: 1600px) {
-    .wrapper {
-        width: 60%;
-    }
+header {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: hsla(0, 0%, 95%, 0.8);
 }
 
-@media only screen and (max-width: 1300px) {
-    .wrapper {
-        width: 70%;
-    }
-}
-
-@media only screen and (max-width: 900px) {
-    .wrapper {
-        width: 80%;
-    }
-}
-
-@media only screen and (max-width: 700px) {
-    .wrapper {
-        width: 90%;
-    }
+.scarlet-pfp {
+  height: 100px;
 }
 
 @media only screen and (max-width: 500px) {
-    header {
-        justify-content: center;
-        text-align: center;
-    }
+  header {
+    justify-content: center;
+    text-align: center;
+  }
+  .scarlet-pfp {
+    display: none;
+  }
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  background-color: hsla(0, 0%, 95%, 0.8);
+}
 
-    .scarlet-pfp {
-        display: none;
-    }
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+
+.section-content {
+  width: 100%;
+}
+
+.section-content > * {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.section-content h2,
+.section-content h3 {
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.section-content h2 {
+  margin-top: 30px;
+  font-size: 3rem;
+}
+
+.section-content h3 {
+  font-size: 2.25rem;
 }
