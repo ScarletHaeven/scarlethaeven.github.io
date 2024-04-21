@@ -1,1 +1,14 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+}
 
+.wip-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.wip-container img {
+  image-rendering: pixelated;
+}
