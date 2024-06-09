@@ -1,0 +1,58 @@
+// * {
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+// }
+
+h1,
+p,
+sup {
+    font-weight: lighter;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    max-width: 500px;
+    margin: 50px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    img {
+        width: 100px;
+        border-radius: 50%;
+    }
+
+    h1 {
+        margin: 0
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    header {
+        justify-content: center;
+        gap: 15px;
+
+        img {
+            width: 50px;
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    header {
+        img {
+            display: none
+        }
+    }
+}
