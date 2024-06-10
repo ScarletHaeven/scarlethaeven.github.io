@@ -19,7 +19,7 @@ main {
 }
 
 article {
-    max-width: 500px;
+    max-width: 750px;
     margin: 50px;
 }
 
@@ -40,7 +40,6 @@ header {
 
 @media only screen and (max-width: 450px) {
     article {
-        max-width: 500px;
         margin: 25px;
     }
 
@@ -56,7 +55,6 @@ header {
 
 @media only screen and (max-width: 400px) {
     article {
-        max-width: 500px;
         margin: 10px;
     }
 
