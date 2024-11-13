@@ -38,7 +38,6 @@ header {
   justify-content: center;
   align-items: center;
   gap: 25px;
-  width: 600px;
 }
 header .profile-picture {
   height: 100px;
@@ -48,35 +47,38 @@ header h1 {
   font-weight: 100;
 }
 
-hr {
-  width: 600px;
-}
-
 main {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  width: 600px;
+  max-width: 600px;
   text-align: justify;
-}
-
-.greeting {
-  text-align: center;
-  font-weight: 300;
 }
 
 .intro {
   text-align: center;
 }
+.intro .greeting {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
+}
 
 .info-selector {
   display: flex;
-  flex-direction: column;
   gap: 15px;
   margin: 0;
   padding: 0;
   list-style-type: none;
   text-align: center;
+}
+.info-selector.main-info-selector {
+  flex-direction: column;
+}
+.info-selector.footer-info-selector {
+  gap: 10px;
+  font-size: 0.75rem;
+  text-decoration: underline;
 }
 .info-selector li {
   text-decoration: underline;
@@ -90,7 +92,8 @@ section {
   gap: 20px;
   list-style-position: inside;
 }
-section.hidden {
+
+.hidden {
   display: none;
 }
 
@@ -100,6 +103,22 @@ section.hidden {
     margin-right: 25px;
   }
 }
+@media only screen and (max-width: 650px) {
+  .fun-fact-list {
+    align-items: center;
+    text-align: center;
+  }
+  .fun-fact-list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    list-style: none;
+  }
+  .fun-fact-list ul li {
+    max-width: 500px;
+    text-align: center;
+  }
+}
 @media only screen and (max-width: 450px) {
   .container {
     gap: 15px;
@@ -107,5 +126,8 @@ section.hidden {
   header {
     flex-direction: column;
     gap: 10px;
+  }
+  .footer-info-selector {
+    justify-content: center;
   }
 }

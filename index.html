@@ -37,21 +37,24 @@
 
       <main>
 
-        <h1 class="greeting">Hi!</h1>
-
         <section class="intro">
+          <h1 class="greeting">Hi!</h1>
           Welcome to my site.
           This is meant to be an extended bio for those who'd like to know more about me; what I
           do, what my interests are, and more.
         </section>
 
-        <ul class="info-selector">
+        <ul class="intro info-selector main-info-selector">
           <li onclick="openPageSection('programming')">Programming</li>
           <li onclick="openPageSection('games')">Games</li>
           <li onclick="openPageSection('music')">Music</li>
         </ul>
 
-        <section class="programming hidden" id="programming">
+        <section class="intro">
+          <p>Click on one of the subjects to view more!</p>
+        </section>
+
+        <section class="programming hidden">
 
           <p>
             I work as a software developer at a metal processing company in the Netherlands.
@@ -59,18 +62,11 @@
             as well as help out with technical difficulties.
           </p>
 
-          <div>
-            <p>Some fun facts:</p>
-
-            <ul>
-              <li>While I do work with TypeScript daily, my favorite language is <strong>Python</strong>.</li>
-            </ul>
-          </div>
-
+          <p>While I do work with TypeScript daily, my favorite language is <strong>Python</strong>.</p>
 
         </section>
 
-        <section class="hidden" id="games">
+        <section class="games hidden">
           <p>
             One of my favorite franchises is Touhou. I've been a fan of it since late 2019, and I still love it to this
             day. Hell, one of my main profile pictures online is a render of my favorite Touhou character,
@@ -78,31 +74,32 @@
           </p>
         </section>
 
-        <section class="hidden" id="music">
+        <section class="music hidden">
           <p>
             Another special interest of mine is music. I love listening to both albums and video game music,
             and I've been collecting CDs since 2023.
           </p>
 
-          <div>
-            <p>Some fun facts:</p>
-            <ul>
-              <li>
-                My favorite album ever is <a href="https://www.discogs.com/master/296383-Jerry-Cantrell-Degradation-Trip-Volumes-1-2">Degradation Trip, Volumes 1 & 2 by Jerry Cantrell</a>.
-              </li>
-              <li>
-                My favorite song ever is <a href="https://www.youtube.com/watch?v=w5jwxrTqoEA">2112 by Rush</a>.
-              </li>
-            </ul>
-          </div>
+          <p>
+            My favorite album ever is <a href="https://www.discogs.com/master/296383-Jerry-Cantrell-Degradation-Trip-Volumes-1-2">Degradation Trip, Volumes 1 & 2 by Jerry Cantrell</a>.
+          </p>
 
-        </section>
+          <p>
+            My favorite song ever is <a href="https://www.youtube.com/watch?v=w5jwxrTqoEA">2112 by Rush</a>.
+          </p>
 
-        <section class="intro" id="intro">
-          <p>Click on one of the subjects to view more!</p>
         </section>
 
       </main>
+
+      <footer class="footer-info-selector hidden">
+        <ul class="info-selector footer-info-selector">
+          <li onclick="openPageSection('intro')">Intro</li>
+          <li onclick="openPageSection('programming')">Programming</li>
+          <li onclick="openPageSection('games')">Games</li>
+          <li onclick="openPageSection('music')">Music</li>
+        </ul>
+      </footer>
 
     </div>
 

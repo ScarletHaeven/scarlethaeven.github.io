@@ -1,8 +1,15 @@
 const views = ['intro', 'programming', 'games', 'music'];
 
-function openPageSection(id) {
+function openPageSection(className) {
   views.forEach((view) => {
-    let viewElement = document.getElementById(view.toLowerCase());
-    viewElement.classList.toggle('hidden', view !== id);
+    document.querySelectorAll('.' + view.toLowerCase()).forEach((viewElement) => {
+      viewElement.classList.toggle('hidden', view !== className);
+    });
   });
+
+  const footerInfoSelector = document.querySelector('.footer-info-selector');
+
+  if (footerInfoSelector) {
+    footerInfoSelector.classList.toggle('hidden', className === 'intro');
+  }
 }
