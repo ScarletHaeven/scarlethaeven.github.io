@@ -2,17 +2,23 @@
 <html lang="en">
 
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:title" content="ScarletHaeven's Extended Bio">
   <meta property="og:description" content="Ever wanted to know more about me? No? Well, too bad!">
   <meta property="og:image" content="https://scarlethaeven.github.io/media/SCP-5500.png">
   <meta property="og:type" content="website">
+
   <link rel="icon" type="image/x-icon" href="media/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">
   <link rel="stylesheet" href="style.css" />
+
+  <script src="script.js"></script>
+
   <title>ScarletHaeven's Extended Bio</title>
 </head>
 
@@ -31,32 +37,72 @@
 
       <main>
 
-        <div>
-          Hi! Welcome to my site. This is meant to be an extended bio for those who'd like to know more about me; what I
+        <h1 class="greeting">Hi!</h1>
+
+        <section class="intro">
+          Welcome to my site.
+          This is meant to be an extended bio for those who'd like to know more about me; what I
           do, what my interests are, and more.
-        </div>
+        </section>
 
-        <div>
-          I work as a software developer at a metal processing company in the Netherlands.
-          I mainly design webstites and do some slight back-end work for them too,
-          as well as help out with technical difficulties.
-        </div>
+        <ul class="info-selector">
+          <li onclick="openPageSection('programming')">Programming</li>
+          <li onclick="openPageSection('games')">Games</li>
+          <li onclick="openPageSection('music')">Music</li>
+        </ul>
 
-        <div>
-          One of my favorite franchises is Touhou. I've been a fan of it since late 2019, and I still love it to this
-          day. Hell, one of my main profile pictures online is a render of my favorite Touhou character,
-          <a href="https://en.touhouwiki.net/wiki/Koishi_Komeiji">Koishi Komeiji</a>.
-        </div>
+        <section class="programming hidden" id="programming">
 
-        <div>
-          <em>I'll be updating this site with more info. Expect more updates soon! <a></a></em>
-        </div>
+          <p>
+            I work as a software developer at a metal processing company in the Netherlands.
+            I mainly design websites and do some slight back-end work for them,
+            as well as help out with technical difficulties.
+          </p>
+
+          <div>
+            <p>Some fun facts:</p>
+
+            <ul>
+              <li>While I do work with TypeScript daily, my favorite language is <strong>Python</strong>.</li>
+            </ul>
+          </div>
+
+
+        </section>
+
+        <section class="hidden" id="games">
+          <p>
+            One of my favorite franchises is Touhou. I've been a fan of it since late 2019, and I still love it to this
+            day. Hell, one of my main profile pictures online is a render of my favorite Touhou character,
+            <a href="https://en.touhouwiki.net/wiki/Koishi_Komeiji">Koishi Komeiji</a>.
+          </p>
+        </section>
+
+        <section class="hidden" id="music">
+          <p>
+            Another special interest of mine is music. I love listening to both albums and video game music,
+            and I've been collecting CDs since 2023.
+          </p>
+
+          <div>
+            <p>Some fun facts:</p>
+            <ul>
+              <li>
+                My favorite album ever is <a href="https://www.discogs.com/master/296383-Jerry-Cantrell-Degradation-Trip-Volumes-1-2">Degradation Trip, Volumes 1 & 2 by Jerry Cantrell</a>.
+              </li>
+              <li>
+                My favorite song ever is <a href="https://www.youtube.com/watch?v=w5jwxrTqoEA">2112 by Rush</a>.
+              </li>
+            </ul>
+          </div>
+
+        </section>
+
+        <section class="intro" id="intro">
+          <p>Click on one of the subjects to view more!</p>
+        </section>
 
       </main>
-
-      <footer>
-        - ScarletHaeven, 2024. <a href="media/boop.gif">Boop!</a>
-      </footer>
 
     </div>
 

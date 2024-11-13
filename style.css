@@ -8,6 +8,7 @@ html {
 }
 
 body {
+  height: 100vh;
   background-image: url("media/SCP5500Background.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,9 +16,12 @@ body {
 }
 
 .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 700px;
+  height: 100%;
   margin: 0 auto;
-  margin-top: 100px;
 }
 
 .container {
@@ -25,7 +29,6 @@ body {
   flex-direction: column;
   gap: 25px;
   padding: 25px;
-  padding-bottom: 15px;
   border-radius: 5px;
   background-color: hsla(0, 0%, 100%, 0.75);
 }
@@ -35,6 +38,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 25px;
+  width: 600px;
 }
 header .profile-picture {
   height: 100px;
@@ -44,17 +48,64 @@ header h1 {
   font-weight: 100;
 }
 
+hr {
+  width: 600px;
+}
+
 main {
   display: flex;
   flex-direction: column;
   gap: 25px;
+  width: 600px;
   text-align: justify;
 }
 
-footer {
-  font-size: 0.75rem;
-  font-style: italic;
+.greeting {
+  text-align: center;
+  font-weight: 300;
 }
-footer a {
-  color: inherit;
+
+.intro {
+  text-align: center;
+}
+
+.info-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+.info-selector li {
+  text-decoration: underline;
+  user-select: none;
+  cursor: pointer;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style-position: inside;
+}
+section.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 750px) {
+  .container {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .container {
+    gap: 15px;
+  }
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
